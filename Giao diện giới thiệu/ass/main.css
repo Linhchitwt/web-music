@@ -30,8 +30,27 @@ html {
     height: 46px;
     background-color: rgb(11, 1, 22);
 }
-
-.slider {
+.name-web{
+    display: inline-block;
+    color: var(--header-text-color);
+    line-height: 46px;
+    padding: 0 24px;
+}
+#nav {
+    float: right;
+}
+#nav li {
+    
+    display: inline-block;
+}
+#nav li a {
+    color:var(--header-text-color);
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+.slider{
     
 }
 
