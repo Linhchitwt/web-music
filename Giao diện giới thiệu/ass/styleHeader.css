@@ -1,1 +1,130 @@
 /*file css này để chỉnh các phần con*/
+.name-web {
+    display: inline-block;
+    color: var(--header-text-color);
+    line-height: 46px;
+    padding: 0 26px;
+    font-size: 26px;
+    text-shadow: 5px 2px 4px rgb(214, 143, 190);
+    font-style: italic;
+
+}
+
+#nav {
+    float: right;
+}
+
+#nav li {
+
+    display: inline-block;
+}
+
+#nav li a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#nav li a:hover {
+    color: #fff;
+    background-color: rgb(54, 50, 91);
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+
+}
+
+.modal_overlay {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sign_img {
+    max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.modal_body {
+    margin: 50px 20%;
+    position: relative;
+
+
+}
+
+.greeting {
+
+    position: relative;
+    width: 415px;
+
+    /* background-color: #fff; */
+}
+
+.sign {
+    left: 455px;
+    top: 80px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* background-color: #fff; */
+}
+
+.sign-header {
+    padding: 0 90px 20px;
+}
+
+.sign-heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.sign-form-input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+
+}
+
+.sign-control {
+    margin-bottom: 16px;
+    position: absolute;
+    padding: 0 100px 50px;
+
+}
+
+.btn {
+    min-width: 120px;
+    background-color: bisque;
+    font-size: 1.2rem;
+    line-height: 32px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 16px;
+    color: #fff;
+    background-color: rgb(152, 0, 90);
+
+}
+
+.btn.btn-dangnhap {
+    background-color: rgb(96, 45, 145);
+}
