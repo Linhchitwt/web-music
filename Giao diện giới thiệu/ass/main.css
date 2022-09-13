@@ -5,12 +5,12 @@
 
 }
 html{
-    font-family:Arial, Helvetica, sans-serif;
+    
 }
 :root {
     --white-color : #fff;
     --black-color: #000;
-    --header-text-color:rgb(199, 91, 181);
+    --header-text-color:rgb(162,134,177);
 }
 .main {
     background-color: #fff;
@@ -20,13 +20,17 @@ html{
 .header {
 
     height: 46px;
-    background-color:rgb(53, 2, 48) ;
+    background-color:rgb(11,1,22) ;
 }
 .name-web{
     display: inline-block;
     color: var(--header-text-color);
     line-height: 46px;
-    padding: 0 24px;
+    padding: 0 26px;
+    font-size: 26px;
+    text-shadow: 5px 2px 4px rgb(214, 143, 190);
+    font-style: italic;
+    
 }
 #nav {
     float: right;
@@ -41,11 +45,12 @@ html{
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 #nav li a:hover {
-    color: #000;
-    background-color: rgb(226, 43, 211);
+    color: #fff;
+    background-color: rgb(54, 50, 91);
 }
 
 .slider {
