@@ -181,9 +181,69 @@
 
 
 
-    <!--Phúc Hưng-->
-    <div class="slider">
-
+        <!--Phúc Hưng-->
+        <div class="slider">
+            <style>
+                @keyframes fade {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+                }
+                @media only screen and (max-width: 300px) {
+                  .text {font-size: 11px}
+                }
+            </style>
+                <body>
+                <div class="slideshow-container">
+                
+               <div class="mySlides fade">
+                  <div class="numbertext nb1">Thư giãn</div>
+                  <img src="slider2.jpg" style="width:100% ">
+                  <div class="text nb2 ">Cuối tuần cùng những bản nhạc nhẹ nhàng </div>
+                </div>  
+                
+                 <div class="mySlides fade">
+                  <div class="numbertext na1 ">Hòa tấu cùng band</div>
+                  <img src="slider3.jpg" style="width:100% ">
+                  <div class="text na2 ">Hòa tấu guitar tình khúc - tuyển chọn những bài hát không lời hay nhất của nhạc sĩ vô thường </div>
+                </div>  
+                
+                <div class="mySlides fade">
+                  <div class="numbertext nc1">Concept - Kpop</div>
+                  <img src="slider4.jpg" style="width:100% ">
+                  <div class="text nc2 ">Bài hát yêu thích nhất trong các concept được đón nhận nồng nhiệt </div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div> 
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); 
+                }
+                </script>
+                </body>
 
     </div>
     <div class="album">
@@ -200,63 +260,8 @@
                 được sức hút của mình. Cùng CNTT2.MUSIC điểm qua một số gương mặt nghệ sĩ yêu thích nhất hiện nay nhé!
             </p>
         </div>
-        
-        <div class="singer">
-            <div class="IU singer-item1">
-                <img src="/Giới thiệu/nghệ sĩ yêu thích/iu.jpg" alt="IU">
-                <div>
-                    <h2>IU</h2>
-                    <p>BIllboard công nhận IU là người dẫn đầu xếp hạng K-Pop Hot 100 Hàn Quốc
-                        mọi thời đại, sở hữu nhiều ca khúc quán quân nhất, đồng thời là nghệ sĩ
-                         giữ vị trí quán quân trong nhiều tuần nhất.
-                    </p>
-                </div>
-                
-            </div>
-            <div class="JustinBieber singer-item2">
-                <div><h2>Justin Bieber</h2>
-                    <p>Justin Bieber chính thức được ghi nhận trở thành nghệ sĩ đầu tiên trên
-                        thế giới có đến 10 ca khúc đạt 1 tỉ lượt nghe (stream) tại nền tảng âm
-                        nhạc quốc tế Spotify, bao gồm "Sorry", "Despacito", "Peaches", "Love Yourself",
-                        "Let Me Love You", "I'm The One", "I Don't Care", "Cold Water" và "Stay". </p></div>
-                
-                    <img src="/Giới thiệu/nghệ sĩ yêu thích/Justin_Bieber.jpg" alt="Justin Bieber">
-            </div>
-            <div class="singer-item1 CharliePuth">\
-                
-                <img src="/Giới thiệu/nghệ sĩ yêu thích/unnamed.jpg" alt="Charlie Puth">
-                
-                <div>
-                    <h2>Charlie Puth</h2>
-                    <p>Bài hát đứng ở vị trí số 1 trên bảng xếp hạng Hot 100 trong 12 tuần. "See You Again"
-                        được đề cử cho ba giải Grammy. Năm 2017, anh cùng Selena Gomez phát hành bài hát We 
-                        Don't Talk Anymore. Tính đến năm 2022 thì bài hát đã đtạ hơn 2,7 tỉ view trên Youtube.
-                    </p>
-                </div>
-            </div>
-            <div class="singer-item2 Rihanna">
-                <div>
-                    <h2>Rihanna</h2>
-                <p>Là chủ nhân của loạt bản hit như Umbrella, We Found Love hay Diamonds, cô được đánh giá là
-                    một trong những giọng ca nổi bật nhất thế giới khi sở hữu âm sắc vô cùng đặc biệt và cuốn hút.
-                </p>
-                </div>
-                <img src="/Giới thiệu/nghệ sĩ yêu thích/Rihanna.png" alt="Rihanna">
-                
-            </div>
-            <div class="singer-item1 TaylorSwift">
-                <img src="/Giới thiệu/nghệ sĩ yêu thích/taylor switf.png" alt="Taylor Swift">
-                <div>
-                    <h2>Taylor Swifft</h2>
-                <p>Cô đạt được danh hiệu Nghệ sĩ của năm và Nữ nghệ sĩ Pop/Rock được yêu thích với ca khúc 
-                    Cardigan. Từ đó, Taylor Swift trở thành nghệ sĩ được trao giải nhiều nhất trong lịch sử 
-                    của chương trình Folklore với 32 giải thưởng.
-                </p>
-                </div>
-                
-            </div>
-            <div class="singer-item2 MTP">
-            
+
+        <div class="album">
 
                 <div>
                     <h2>Sơn Tùng MTP</h2>
