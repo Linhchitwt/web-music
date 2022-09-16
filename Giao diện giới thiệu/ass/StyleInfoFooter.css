@@ -1,4 +1,73 @@
 .artist{
    display: block;
-   background-image:url(Unti)
+   height: inherit;
+   width: 100%;
+   background-image:url("/Giới thiệu/nền/Untitled-2-01.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   box-sizing: border-box;
+   background-origin: content-box;
+   color: aliceblue;
+   padding: 0 20 20 0;
+}
+.artist h1 {
+   text-align: center;
+}
+.singer{
+   display: flex;
+   flex-direction: column;
+   
+}
+.singer-item1{
+   margin: 0 0 0 60px;
+   
+   flex: 1;
+   justify-content: center;
+   width: 45%;
+   height: 40px;
+   display: flex;
+   
+}
+.singer-item1 img {
+   justify-self: start;
+   width: 35%;
+   
+}
+
+.singer-item1 div {
+   display: flex;
+   
+   flex-direction: column;
+   padding: 20px 10px;
+   margin: 20px 0 20px 0;
+   text-align: justify;
+   background-color:indigo 0.9;
+   
+}
+.singer-item1 h2{
+   text-align: center;
+   margin: 0px 0 20px 0;
+   
+}
+.singer-item1 p{
+   margin: 20px 0 0px 0;
+}
+
+
+
+
+.singer-item2{
+   margin: 0 60px 0 0;
+   flex-basis: 50%;
+   flex: 1;
+  float:right;
+   width: 45%;
+   height: 40px;
+   display: flex;
+}
+.IU{
+   justify-self: start;
+}
+.JustinBieber{
+   justify-self:end;
 }
