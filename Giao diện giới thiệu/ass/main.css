@@ -35,10 +35,14 @@ html {
 .artist {}
 
 
-.news {}
+.news {
+
+}
 
 
-.info {}
+.info {
+    height: 1000px;
+}
 
 
 .footer {}
