@@ -5,8 +5,8 @@
     line-height: 46px;
     padding: 0 26px;
     font-size: 26px;
-    text-shadow: 2px 2px 2px rgb(214, 143, 190);
-
+    text-shadow: 5px 2px 4px rgb(214, 143, 190);
+ 
 }
 
 #nav {
@@ -52,48 +52,87 @@
 
 }
 
-.sign_img {
+
+
+.modal_body {
+    
+    height: 525px;
+    margin: 50px 20%;
+    position: relative;
+    background:url('/Giới thiệu/đăng nhập và đăng kí/nền-01.png') ;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    /* display: in; */
+    
+ }
+
+/* .form-login {
     max-width: 800px;
     height: auto;
     border-radius: 5px;
     position: absolute;
+    /* position: relative; */
+    /* background-color: rgb(109, 116, 116); */
+    /* background:url('/Giới thiệu/đăng nhập và đăng kí/nền-01.png') ; */
+
+.modal_inner {
+    display: flex;
 }
-
-.modal_body {
-    margin: 50px 20%;
-    position: relative;
-
-
-}
-
 .greeting {
-
+    width: 410px;
+    height: 529px;
+    /* background-color: bisque; */
+  
+}
+.greeting_group {
+    top: 60px;
+    left: 8px;
     position: relative;
-    width: 415px;
+    
+}
+#h {
+    text-align: center;
+     line-height: 1.6;
+    color: rgb(56,33,101);
 
-    /* background-color: #fff; */
+}
+#intro {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+     line-height: 1.6;
 }
 
-.sign {
-    left: 455px;
+
+ .sign {
+    /* left: 455px; */
+    /* top: 80px; */
+    /* position: relative; */
+    width: 410px;
+    height: 529px;
+    /* background-color: rgb(95, 90, 90); */
+ }
+.sign-group {
     top: 80px;
+    left: 60px;
     position: relative;
     width: 300px;
-    height: 300px;
-    /* background-color: #fff; */
+    height: 500px;
 }
-
 .sign-header {
     padding: 0 90px 20px;
-}
+} 
 
-.sign-heading {
+ .sign-heading {
     font-size: 2rem;
     font-weight: 400;
     color: #fff;
-}
+} 
 
-.sign-form-input {
+ .sign-form-input {
     height: 40px;
     width: 100%;
     margin-bottom: 16px;
@@ -102,14 +141,14 @@
     border-radius: 2px;
     outline: none;
 
-}
+} 
 
-.sign-control {
+ .sign-control {
     margin-bottom: 16px;
     position: absolute;
     padding: 0 100px 50px;
 
-}
+} 
 
 .btn {
     min-width: 120px;
@@ -122,8 +161,8 @@
     color: #fff;
     background-color: rgb(152, 0, 90);
 
-}
+} 
 
-.btn.btn-dangnhap {
+ .btn.btn-dangnhap { 
     background-color: rgb(96, 45, 145);
-}
+ } 
