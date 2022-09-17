@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="ass/StyleInfoFooter.css">
     <link rel="stylesheet" href="ass/StyleSliderAlbum.css">
     <title>CNTT2_MUSIC</title>
+   
 </head>
 
 <body>
+   
     <div class="main">
         <!--Thanh-->
         <div class="header">
@@ -22,20 +24,24 @@
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">Tin mới</a></li>
                 <li><a href="">Thông tin </a></li>
-                <li><a href="">Đăng ký</a></li>
-                <li><a href="">Đăng nhập</a></li>
+                <li><a class ="  btn-js-dangky" >Đăng ký</a></li>
+                <li><a class ="btn-js-dangnhap" >Đăng nhập</a></li>
+                   
             </ul>
+            
+          
         </div>
-        <div class="modal">
+
+        <!-- end thanh -->
+          <!-- modal -->
+         <div class="modal dangky">
             <div class="modal_overlay"></div>
             <div class="modal_body">
-                <!--  begin modal-inner  -->
-
-                <div class="modal_inner">
-
-                    <!-- form login .. -->
-                     <!-- <img src="/Giới thiệu/đăng nhập và đăng kí/nền-01.png" alt="" class="sign_img"> -->
-                  
+            <!--  begin modal-inner  -->
+                 <div class="modal_inner">
+                  <!-- form login .. -->
+                 
+                     
                         <div class="greeting">
                             <div class="greeting_group">
                                 <h3 id="h">Chào mừng bạn đến với CNTT2.MUSIC</h3>
@@ -46,6 +52,7 @@
                           
     
                         </div>
+                        <!-- sign -->
                         <div class="sign">
                             
                             <div class="sign-group">
@@ -73,21 +80,88 @@
                             </div>
                            
                         </div>
-    
-    
-    
-    
-    
-    
-                        
+                        <!-- end sign -->
+                 
                      
+                      
                    
-                  
-                </div>
-                <!-- end nomal-inner -->
+                   
+                     
+                
+                 </div>
+                 
+           
+              
+           
+            
             </div>
         </div>
-    </div>
+        <!-- end nomal -->
+        <!-- end dang ky -->
+        <div class="modal dangnhap">
+            <div class="modal_overlay"></div>
+            <div class="modal_body">
+            <!--  begin modal-inner  -->
+                 <div class="modal_inner">
+                  <!-- form login .. -->
+                 
+                     
+                        <div class="greeting">
+                            <div class="greeting_group">
+                                <h3 id="h">Chào mừng bạn đến với CNTT2.MUSIC</h3>
+                                <p id="intro"> Cung cấp nhạc, podcast và video ký thuật số
+                                 cho phép bạn truy cập hàng triệu bài hát và các nội dung
+                                  khác của các nghệ sĩ trên thế giới.
+                                </p></div>
+                          
+    
+                        </div>
+                        <!-- sign -->
+                        <div class="sign">
+                            
+                            <div class="sign-group">
+                                <div class="sign-header">
+                                    <h3 class="sign-heading">Đăng nhập </h3>
+                                </div>
+        
+                                <div class="sign-form">
+                                    <div class="sign-form-group">
+                                        <input type="text" class="sign-form-input" placeholder="Nhập vào tên tài khoản">
+                                    </div>
+                                    <div class="sign-form-group">
+                                        <input type="text" class="sign-form-input" placeholder="Nhập vào mật khẩu">
+                                    </div>
+                                    <div class="sign-form-group">
+                                        <input type="text" class="sign-form-input" placeholder="Nhập lại mật khẩu">
+                                    </div>
+                                </div>
+                                <div class="sign-control">
+                                    <div><button class="btn">Xác nhận </button></div>
+                                    <div><button class="btn btn-dangnhap">Đăng nhập </button></div>
+        
+        
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <!-- end sign -->
+                 
+                     
+                      
+                   
+                   
+                     
+                
+                 </div>
+                 
+           
+              
+           
+            
+            </div>
+        </div>
+        <!-- end dang nhap -->
+                    
 
 
 
@@ -224,6 +298,23 @@
 
     </div>
     </div>
+    <script > 
+        const loginBtn = document.querySelector('.btn-js-dangnhap')
+        const modal = document.querySelector('.modal.dangnhap')
+        function showLogin(){
+            modal.classList.add('open')
+            
+        }
+        loginBtn.addEventListener('click', showLogin)
+        const loginBtn1 = document.querySelector('.btn-js-dangky')
+        const modal1 = document.querySelector('.modal.dangky')
+        function showLogin1(){
+            modal1.classList.add('open')
+            
+        }
+        loginBtn1.addEventListener('click', showLogin1)
+        
+    </script>
 </body>
 
 </html>
