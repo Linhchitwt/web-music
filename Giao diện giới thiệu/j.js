@@ -1,1 +1,0 @@
-const thna = document.querySelectorAll('button .btn -js -dangky')

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="ass/StyleArtistNews.css">
     <link rel="stylesheet" href="ass/StyleInfoFooter.css">
     <link rel="stylesheet" href="ass/StyleSliderAlbum.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
     <title>CNTT2_MUSIC</title>
    
 </head>
@@ -37,7 +38,7 @@
          <div class="modal dangky">
             <div class="modal_overlay"></div>
             <div class="modal_body">
-            <!--  begin modal-inner  -->
+               <!--  begin modal-inner  -->
                  <div class="modal_inner">
                   <!-- form login .. -->
                  
@@ -54,9 +55,13 @@
                         </div>
                         <!-- sign -->
                         <div class="sign">
+                            <div class="icon-close dangky">
+                                <i class="ti-close"></i>
+                            </div>
                             
                             <div class="sign-group">
                                 <div class="sign-header">
+                                                             
                                     <h3 class="sign-heading">Đăng ký </h3>
                                 </div>
         
@@ -118,9 +123,14 @@
                         </div>
                         <!-- sign -->
                         <div class="sign">
+                            <div class="icon-close dangnhap">
+                                <i class="ti-close"></i>
+                            </div>
                             
                             <div class="sign-group">
+                                
                                 <div class="sign-header">
+                            
                                     <h3 class="sign-heading">Đăng nhập </h3>
                                 </div>
         
@@ -131,13 +141,17 @@
                                     <div class="sign-form-group">
                                         <input type="text" class="sign-form-input" placeholder="Nhập vào mật khẩu">
                                     </div>
-                                    <div class="sign-form-group">
-                                        <input type="text" class="sign-form-input" placeholder="Nhập lại mật khẩu">
-                                    </div>
+                                   
+                                        
+                                        <input class="sign-check-radio" name="radio" type="radio"><label class="sign-radio" for="">Nhớ tài khoản</label>
+                                        <input class="sign-check-radio" name="radio" type="radio"><label class="sign-radio"for="">Quên mật khẩu</label>
+                                    
+                                    
                                 </div>
                                 <div class="sign-control">
                                     <div><button class="btn">Xác nhận </button></div>
-                                    <div><button class="btn btn-dangnhap">Đăng nhập </button></div>
+                                    <div><button class="btn btn-dangnhap">Đăng ký </button></div>
+                               
         
         
                                 </div>
@@ -301,18 +315,34 @@
     <script > 
         const loginBtn = document.querySelector('.btn-js-dangnhap')
         const modal = document.querySelector('.modal.dangnhap')
+        const modalClose=document.querySelector('.icon-close.dangnhap')
+        const modalClose1=document.querySelector('.icon-close.dangky')
+
+        const loginBtn1 = document.querySelector('.btn-js-dangky')
+        const modal1 = document.querySelector('.modal.dangky')
         function showLogin(){
             modal.classList.add('open')
             
         }
-        loginBtn.addEventListener('click', showLogin)
-        const loginBtn1 = document.querySelector('.btn-js-dangky')
-        const modal1 = document.querySelector('.modal.dangky')
+       
+        
         function showLogin1(){
             modal1.classList.add('open')
             
         }
+        function hideShowLogin1(){
+            modal1.classList.remove('open')
+            
+        }
+        function hideShowLogin(){
+            modal.classList.remove('open')
+            
+        }
+        
+        loginBtn.addEventListener('click', showLogin)
         loginBtn1.addEventListener('click', showLogin1)
+        modalClose1.addEventListener('click', hideShowLogin1)
+        modalClose.addEventListener('click', hideShowLogin)
         
     </script>
 </body>
