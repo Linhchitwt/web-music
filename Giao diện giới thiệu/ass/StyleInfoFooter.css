@@ -3,14 +3,30 @@
    height: inherit;
    width: 100%;
    background-image:url("/Giới thiệu/nền/Untitled-2-01.png");
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    background-size: 100%;
    box-sizing: border-box;
    background-origin: content-box;
    color: aliceblue;
    padding: 0 20 20 0;
+   overflow: hidden;
+   background-size: contain;
+   
 }
+.artist-tilte h1{
+   font-size: 5rem;
+  padding: 40px 0 0 0;
+}
+.artist-tilte p{
+   font-size: 1.5rem;
+   padding: 20px 80px 40px 80px;
+   text-align: justify;
+   text-align-last: center
+   
+}
+
 .artist h1 {
+   
    text-align: center;
 }
 .singer{
@@ -19,18 +35,20 @@
    
 }
 .singer-item1{
-   margin: 0 0 0 60px;
+   margin: 0 0 0 80px;
    
    flex: 1;
    justify-content: center;
    width: 45%;
-   height: 40px;
+   
    display: flex;
+   height: 218px ;
    
 }
 .singer-item1 img {
-   justify-self: start;
+   
    width: 35%;
+  
    
 }
 
@@ -38,36 +56,131 @@
    display: flex;
    
    flex-direction: column;
-   padding: 20px 10px;
-   margin: 20px 0 20px 0;
+   padding: 10px 10px 0 0;
+   margin: 0px 0 0px 0;
    text-align: justify;
-   background-color:indigo 0.9;
+   background-image: linear-gradient(270deg,var(--singer1-color),var(--singer2-color));
+
+   
+   
    
 }
 .singer-item1 h2{
+   font-size: 2.5rem;
    text-align: center;
-   margin: 0px 0 20px 0;
+   padding: 0px 0 10px 0;
    
 }
 .singer-item1 p{
    margin: 20px 0 0px 0;
+   padding: 0 10px 0 10px;
 }
 
 
 
 
 .singer-item2{
-   margin: 0 60px 0 0;
-   flex-basis: 50%;
+   margin: 0 80px 0 0;
+   
    flex: 1;
-  float:right;
+   align-self: flex-end;
+ 
    width: 45%;
-   height: 40px;
+   height: 218px;
    display: flex;
 }
-.IU{
+.singer-item2 img {
    justify-self: start;
+   width: 35%;
+   height: 218px;
+   
+   
 }
-.JustinBieber{
-   justify-self:end;
+
+.singer-item2 div{
+   display: flex;
+   
+   flex-direction: column;
+   padding: 10px 10px 0 0;
+   margin: 0px 0 0px 0;
+   text-align: justify;
+   background-image: linear-gradient(90deg,var(--singer1-color),var(--singer2-color));
+   
+   
+   
+}
+.singer-item2 h2{
+   font-size: 2.5rem;
+   text-align: center;
+   padding: 0px 0 10px 0;
+   
+}
+.singer-item2 p{
+   margin: 20px 0 0px 0;
+   padding: 0 10px 0 10px;
+}
+
+
+.CharliePuth img,.JustinBieber img,.IU img
+,.Rihanna img,.MTP img{
+   height: 218px;
+   width: 154px
+   
+}
+.TaylorSwift img{
+   width: 164px;
+   height: 218px;
+}
+
+
+.news{
+   display: flex;
+   padding: 20px 60px 60px 60px;
+   background-image: linear-gradient(180deg,var(--back-color),white);
+  color: white;
+   
+}
+
+.news-tilte{
+   text-align: center;
+   font-size: 3.5rem;
+
+}
+.news-tilte h1{
+   padding: 0 0 0 20px;
+   
+}
+.musicBank{
+display: flex;
+   flex-direction: column;
+   margin: 125px 20px 0 40px;
+}
+.musicBank-header{
+   margin: 0 0 20px 0;
+   text-align: left;
+
+
+}
+.musicBank-header h1{
+   font-size: 2.5rem;
+   margin: 0 0 10px 10px;
+   color: var(--font-color);
+}
+.topMucsic{
+   display: flex;
+   flex-direction: row;
+   text-align: right;
+   margin: 20px 20px 0 0 ;
+}
+.top{
+   margin: 0 20px 0 0;
+}
+.top h2{
+   font-size: 2rem;
+   margin: 0 0 20px 0;
+   color: var(--font-color);
+}
+.topMucsic img{
+   width: 40%;
+   height: 464px;
 }

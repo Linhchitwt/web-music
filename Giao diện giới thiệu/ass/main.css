@@ -13,6 +13,11 @@ html {
     --white-color: #fff;
     --black-color: #000;
     --header-text-color: rgb(162, 134, 177);
+    --singer1-color:rgba(57, 6, 64,0.7);
+    --singer2-color:rgb(102, 85, 103);
+    --back-color:rgb(42, 36, 51);
+    --font-color:rgb(186, 155, 201);
+    
 }
 
 .main {
