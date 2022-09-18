@@ -136,35 +136,44 @@
    color: #ccc;
  }
 .sign-group {
-    top: 80px;
-    left: 60px;
+    top: 170px;
+    left: 80px;
     position: relative;
-    width: 300px;
+    width: 250px;
     height: 500px;
+    
+    
 }
 .sign-header {
-   margin-bottom: 20px;
+   margin-bottom: 15px;
    text-align: center;
 
 } 
 
  .sign-heading {
 
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 400 ; 
     color: #fff;
 } 
 
  .sign-form-input {
-    height: 40px;
-    width: 100%;
+    height: 35px;
+    width: 90%;
     margin-bottom: 16px;
+    margin-left: 5px;
     padding: 0 12px;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 6px;
     outline: none;
 
 } 
+.sign-form-input.repeat {
+    margin-left: 20px;
+}
+.ti-lock,.ti-user {
+    color: #fff;
+}
 
  .sign-control {
    
@@ -173,12 +182,12 @@
 } 
 
 .btn {
-    min-width: 120px;
+    min-width: 100px;
     background-color: bisque;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     line-height: 32px;
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     margin-top: 16px;
     color: #fff;
     background-color: rgb(152, 0, 90);
@@ -188,13 +197,32 @@
  .btn.btn-dangnhap { 
     background-color: rgb(96, 45, 145);
  } 
-.sign-radio  {
-    color:#fff;
-}
-.sign-check-radio {
-    margin: .8rem ;
-    transform: scale(1.5);
-   
+ .sign-check{
+     display:flex;
     
+
+}
+.sign-check1{
+  width: 45%;
+  display: inline;
+  margin-right: 16px;
+  margin-left: 20px;
+
+    
+
+   
+
+}
+.sign-radio  { 
+    font-size: 0.7rem;
+    color: #fff;
+    float:center;
+    
+}
+
+.ti-check{
+    background-color: #fff;
+    border-radius: 50%;
+    /* display: none; */
    
 }

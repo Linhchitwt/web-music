@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="ass/StyleArtistNews.css">
     <link rel="stylesheet" href="ass/StyleInfoFooter.css">
     <link rel="stylesheet" href="ass/StyleSliderAlbum.css">
-    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/Giao diện giới thiệu/themify-icons-font/themify-icons/themify-icons.css">
     <title>CNTT2_MUSIC</title>
    
 </head>
@@ -61,13 +61,13 @@
         
                                 <div class="sign-form">
                                     <div class="sign-form-group">
-                                        <input type="text" class="sign-form-input" placeholder="Nhập vào tên tài khoản">
+                                        <i class="ti-user"></i><input type="text" class="sign-form-input" placeholder="Nhập vào tên tài khoản">
                                     </div>
                                     <div class="sign-form-group">
-                                        <input type="text" class="sign-form-input" placeholder="Nhập vào mật khẩu">
+                                      <i class="ti-lock"></i><input type="text" class="sign-form-input" placeholder="Nhập vào mật khẩu">
                                     </div>
-                                    <div class="sign-form-group">
-                                        <input type="text" class="sign-form-input" placeholder="Nhập lại mật khẩu">
+                                    <div class="sign-form-group ">
+                                        <input type="text" class="sign-form-input repeat" placeholder="Nhập lại mật khẩu">
                                     </div>
                                 </div>
                                 <div class="sign-control">
@@ -115,15 +115,14 @@
         
                                 <div class="sign-form">
                                     <div class="sign-form-group">
-                                        <input type="text" class="sign-form-input" placeholder="Nhập vào tên tài khoản">
+                                        <i class="ti-user"></i><input type="text" class="sign-form-input" placeholder="Nhập vào tên tài khoản">
                                     </div>
                                     <div class="sign-form-group">
-                                        <input type="text" class="sign-form-input" placeholder="Nhập vào mật khẩu">
-                                    </div>
+                                      <i class="ti-lock"></i><input type="text" class="sign-form-input" placeholder="Nhập vào mật khẩu">
+                                    </div class="sign-check">
                                    
-                                        
-                                        <input class="sign-check-radio" name="radio" type="radio"><label class="sign-radio" for="">Nhớ tài khoản</label>
-                                        <input class="sign-check-radio" name="radio" type="radio"><label class="sign-radio"for="">Quên mật khẩu</label>
+                                        <div class="sign-check1"><i class="ti-check"></i><label class="sign-radio" > Nhớ tài khoản</label></div>
+                                        <div class="sign-check1"><label class="sign-radio " > Quên mật khẩu?</label></div>
                                     
                                     
                                 </div>
@@ -427,9 +426,12 @@
             modal.classList.remove('open')
             
         }
-        
-        loginBtn.addEventListener('click', showLogin)
-        loginBtn1.addEventListener('click', showLogin1)
+        function dangnhap(){showLogin();hideShowLogin1()}
+        function dangky(){showLogin1();hideShowLogin()}
+        loginBtn.addEventListener('click',dangnhap )
+        // loginBtn.addEventListener('click',hideShowLogin1)
+
+        loginBtn1.addEventListener('click', dangky)
         modalClose1.addEventListener('click', hideShowLogin1)
         modalClose.addEventListener('click', hideShowLogin)
         
