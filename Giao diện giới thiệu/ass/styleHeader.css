@@ -66,11 +66,12 @@
 
 .modal_body {
     background-color: black;
+    z-index: 20;
     
     height: 525px;
     margin: 10px 20%;
     position: relative;
-    background:url('/Giới thiệu/đăng nhập và đăng kí/nền-01.png') ;
+    background:url('/Giới thiệu/nền/nền-01.png') ;
  
     background-size: 100% ;
     background-repeat: no-repeat;
