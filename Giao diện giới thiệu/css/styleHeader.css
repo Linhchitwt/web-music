@@ -1,4 +1,3 @@
-/*file css này để chỉnh các phần con*/
 .name-web {
     display: inline-block;
     color: var(--header-text-color);
@@ -6,7 +5,7 @@
     padding: 0 26px;
     font-size: 26px;
     text-shadow: 5px 2px 4px rgb(214, 143, 190);
- 
+
 }
 
 #nav {
@@ -31,7 +30,7 @@
 #nav li a:hover {
     color: #fff;
     /* background-color: rgb(54, 50, 91); */
-    text-decoration:underline;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -47,6 +46,7 @@
     background-color: rgb(145, 139, 139);
 
 }
+
 .modal.dangnhap.open {
     display: flex;
 }
@@ -54,12 +54,13 @@
 .modal.dangky.open {
     display: flex;
 }
+
 .modal_overlay {
 
     position: absolute;
     width: 100%;
     height: 100%;
-  
+
 
 }
 
@@ -67,21 +68,21 @@
 
 .modal_body {
     background-color: black;
-    z-index: 20;
-    
+    z-index: 100;
+
     height: 525px;
     margin: 10px 20%;
     position: relative;
-    background:url('/Giới thiệu/nền/nền-01.png') ;
- 
-    background-size: 100% ;
+    background: url('/Giới thiệu/nền/nền-01.png');
+
+    background-size: 100%;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
-    
-    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     /* display: in; */
-    
- }
+
+}
 
 /* .form-login {
     max-width: 800px;
@@ -89,76 +90,84 @@
     border-radius: 5px;
     position: absolute;
     /* position: relative; */
-    /* background-color: rgb(109, 116, 116); */
-    /* background:url('/Giới thiệu/đăng nhập và đăng kí/nền-01.png') ; */
+/* background-color: rgb(109, 116, 116); */
+/* background:url('/Giới thiệu/đăng nhập và đăng kí/nền-01.png') ; */
 
 .modal_inner {
     display: flex;
 }
+
 .greeting {
     width: 410px;
     height: 529px;
     /* background-color: bisque; */
-  
+
 }
+
 .greeting_group {
     top: 60px;
     left: 8px;
     position: relative;
-    
-}
-#h {
-    text-align: center;
-     line-height: 1.6;
-    color: rgb(56,33,101);
 
 }
+
+#h {
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(56, 33, 101);
+
+}
+
 #intro {
     margin-top: 10px;
     color: #fff;
     text-align: center;
-     line-height: 1.6;
+    line-height: 1.6;
 }
 
 
- .sign {
+.sign {
     /* left: 455px; */
     /* top: 80px; */
     /* position: relative; */
     width: 410px;
     height: 529px;
     /* background-color: rgb(95, 90, 90); */
- }
- .icon-close {
-    float:right;
+}
+
+.icon-close {
+    float: right;
     margin: 5px;
- }
- .icon-close:hover {
-   color: #ccc;
- }
+}
+
+.icon-close:hover {
+    color: #ccc;
+}
+
 .sign-group {
     top: 170px;
     left: 80px;
     position: relative;
     width: 250px;
     height: 500px;
-    
-    
+
+
 }
+
 .sign-header {
-   margin-bottom: 15px;
-   text-align: center;
+    margin-bottom: 15px;
+    text-align: center;
 
-} 
+}
 
- .sign-heading {
+.sign-heading {
 
     font-size: 1.2rem;
-    font-weight: 400 ; 
+    font-weight: 400;
     color: #fff;
-} 
+}
 
- .sign-form-input {
+.sign-form-input {
     height: 35px;
     width: 90%;
     margin-bottom: 16px;
@@ -168,19 +177,22 @@
     border-radius: 6px;
     outline: none;
 
-} 
+}
+
 .sign-form-input.repeat {
     margin-left: 20px;
 }
-.ti-lock,.ti-user {
+
+.ti-lock,
+.ti-user {
     color: #fff;
 }
 
- .sign-control {
-   
+.sign-control {
+
     text-align: center;
 
-} 
+}
 
 .btn {
     min-width: 100px;
@@ -193,45 +205,50 @@
     color: #fff;
     background-color: rgb(152, 0, 90);
 
-} 
+}
+
 .btn:hover {
-    text-decoration:underline;
+    text-decoration: underline;
     cursor: pointer;
-    
+
 }
 
- .btn.btn-dangnhap { 
+.btn.btn-dangnhap {
     background-color: rgb(96, 45, 145);
- } 
- .btn.btn-dangky { 
+}
+
+.btn.btn-dangky {
     background-color: rgb(96, 45, 145);
- } 
- .sign-check{
-     display:flex;
-    
+}
+
+.sign-check {
+    display: flex;
+
 
 }
-.sign-check1{
-  width: 45%;
-  display: inline;
-  margin-right: 16px;
-  margin-left: 20px;
 
-    
+.sign-check1 {
+    width: 45%;
+    display: inline;
+    margin-right: 16px;
+    margin-left: 20px;
 
-   
+
+
+
 
 }
-.sign-radio  { 
+
+.sign-radio {
     font-size: 0.7rem;
     color: #fff;
-    float:center;
-    
+    float: center;
+
 }
 
-.ti-check{
+.ti-check {
     background-color: #fff;
     border-radius: 50%;
     /* display: none; */
-   
+
 }
