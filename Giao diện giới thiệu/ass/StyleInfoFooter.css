@@ -1,14 +1,21 @@
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.info > h1 {
+  float: right;
+  margin-right: 32px;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position: relative;
+  margin: auto;
+  height: 400px;
+  z-index: 3;
 }
 
 /* Next & previous buttons */
@@ -17,8 +24,8 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -81,6 +88,46 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.Footer h1{
+  color:rgb(190, 157, 203,);
+  margin-bottom: 32px;
+}
+
+
+
+.Footer {
+  display: flex;
+  justify-content: space-around;
+}
+.Footer {
+  background-color: rgba(225, 95, 236, 0.336);
+}
+.footer-item a{
+  color: white;
 }
