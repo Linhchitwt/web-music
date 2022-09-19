@@ -8,7 +8,7 @@
    box-sizing: border-box;
    background-origin: content-box;
    color: aliceblue;
-   padding: 0 20 20 0;
+   padding: 0 10 10 0;
    overflow: hidden;
    background-size: contain;
    
@@ -35,7 +35,7 @@
    
 }
 .singer-item1{
-   margin: 0 0 0 80px;
+   margin: 0 0 0 74px;
    
    flex: 1;
    justify-content: center;
@@ -80,7 +80,7 @@
 
 
 .singer-item2{
-   margin: 0 80px 0 0;
+   margin: 0 74px 0 0;
    
    flex: 1;
    align-self: flex-end;
@@ -91,7 +91,7 @@
 }
 .singer-item2 img {
    justify-self: start;
-   width: 35%;
+   width: 40%;
    height: 218px;
    
    
@@ -118,32 +118,40 @@
 .singer-item2 p{
    margin: 20px 0 0px 0;
    padding: 0 10px 0 10px;
+   
 }
 
 
 .CharliePuth img,.JustinBieber img,.IU img
 ,.Rihanna img,.MTP img{
-   height: 218px;
-   width: 154px
+   height: 240px;
+   width: 180px
    
 }
 .TaylorSwift img{
-   width: 164px;
-   height: 218px;
+   width: 180px;
+   height: 240px;
 }
 
 
 .news{
    display: flex;
+   flex-direction: column;
    padding: 20px 60px 60px 60px;
    background-image: linear-gradient(180deg,var(--back-color),white);
-  color: white;
+  
    
+}
+.news-main{
+   display: flex;
+   color: white;
+
 }
 
 .news-tilte{
    text-align: center;
    font-size: 3.5rem;
+   width: 40%;
 
 }
 .news-tilte h1{
@@ -154,6 +162,7 @@
 display: flex;
    flex-direction: column;
    margin: 125px 20px 0 40px;
+   width: 50%;
 }
 .musicBank-header{
    margin: 0 0 20px 0;
@@ -165,6 +174,9 @@ display: flex;
    font-size: 2.5rem;
    margin: 0 0 10px 10px;
    color: var(--font-color);
+}
+.musicBank-header p{
+   font-size: 1.5rem;
 }
 .topMucsic{
    display: flex;
@@ -182,5 +194,24 @@ display: flex;
 }
 .topMucsic img{
    width: 40%;
-   height: 464px;
+   height: 380px;
+}
+.new-icon{
+   
+   
+}
+.new-icon h2{
+   text-align: center;
+   color: rgb(102, 45, 145);
+   
+   font-size: 4rem;
+}
+
+.fa-regular{
+   color: rgb(102, 45, 145);
+   
+   font-size:6rem;
+}
+@media(max-with=1024px)and(min-with=724px){
+   
 }
