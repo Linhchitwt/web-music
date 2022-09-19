@@ -43,8 +43,8 @@
     bottom: 0;
     left: 0;
     display: none;
-    background-color: rgb(145, 139, 139);
-
+    background-color: rgba(145, 139, 139,0.5);
+    z-index: 10;
 }
 
 .modal.dangnhap.open {
