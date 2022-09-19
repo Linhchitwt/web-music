@@ -44,7 +44,7 @@
     bottom: 0;
     left: 0;
     display: none;
-    background-color: #ccc;
+    background-color: rgb(145, 139, 139);
 
 }
 .modal.dangnhap.open {
@@ -194,8 +194,16 @@
     background-color: rgb(152, 0, 90);
 
 } 
+.btn:hover {
+    text-decoration:underline;
+    cursor: pointer;
+    
+}
 
  .btn.btn-dangnhap { 
+    background-color: rgb(96, 45, 145);
+ } 
+ .btn.btn-dangky { 
     background-color: rgb(96, 45, 145);
  } 
  .sign-check{

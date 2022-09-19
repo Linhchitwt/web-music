@@ -128,7 +128,7 @@
                                 </div>
                                 <div class="sign-control">
                                     <div><button class="btn">Xác nhận </button></div>
-                                    <div><button class="btn btn-dangnhap">Đăng ký </button></div>
+                                    <div><button class="btn btn-dangky">Đăng ký </button></div>
                                
         
         
@@ -405,7 +405,6 @@
         const modal = document.querySelector('.modal.dangnhap')
         const modalClose=document.querySelector('.icon-close.dangnhap')
         const modalClose1=document.querySelector('.icon-close.dangky')
-
         const loginBtn1 = document.querySelector('.btn-js-dangky')
         const modal1 = document.querySelector('.modal.dangky')
         function showLogin(){
@@ -434,6 +433,8 @@
         loginBtn1.addEventListener('click', dangky)
         modalClose1.addEventListener('click', hideShowLogin1)
         modalClose.addEventListener('click', hideShowLogin)
+        document.querySelector('.btn.btn-dangnhap').addEventListener('click',dangnhap)
+        document.querySelector('.btn.btn-dangky').addEventListener('click',dangky)
         
     </script>
 </div>
