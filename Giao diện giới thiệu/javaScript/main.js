@@ -66,7 +66,7 @@ const musics =[
 
 //set mặc định bài 1 phát đầu
 let indexSong = 0;
-song.setAttribute('src', `./assests/mp3/${musics[indexSong].file}`); 
+song.setAttribute('src', `../../mp3/${musics[indexSong].file}`); 
 //==============================================
 //                  THÊM BÀI HÁT 
 //==============================================
@@ -160,7 +160,7 @@ function changeSong(dir) {
     }
     resetSong(indexSong);
     playBtn.innerHTML = `<i class="fas fa-pause-circle pause-icon main-icon main-icon--big"></i>`;
-    song.setAttribute('src', `./assests/mp3/${musics[indexSong].file}`); 
+    song.setAttribute('src', `../../mp3/${musics[indexSong].file}`); 
     song.play();
 }
 //==============================================
@@ -211,7 +211,7 @@ playList.onclick = function(e) {
     isPlaying = false;
     
     playBtn.innerHTML = `<i class="fas fa-pause-circle pause-icon main-icon main-icon--big"></i>`;
-    song.setAttribute('src', `./assests/mp3/${musics[indexSong].file}`); 
+    song.setAttribute('src', `../../mp3/${musics[indexSong].file}`); 
     song.play();
     resetSong(songNoteindex);
 
