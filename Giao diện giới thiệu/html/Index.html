@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="/Giao diện giới thiệu/css/main.css">
     <link rel="stylesheet" href="/Giao diện giới thiệu/css/styleHeader.css">
     <link rel="stylesheet" href="/Giao diện giới thiệu/css/StyleArtistNews.css">
-    <link rel="stylesheet" href="/Giao diện giới thiệu/css/StyleInfoFooter.css">
     <link rel="stylesheet" href="/Giao diện giới thiệu/css/StyleSliderAlbum.css">
+    <link rel="stylesheet" href="/Giao diện giới thiệu/css/StyleInfoFooter.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
     <link rel="stylesheet" id="themify-icons-css"
         href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css" type="text/css"
         media="all">
     <title>CNTT2_MUSIC</title>
-
 </head>
 
 <body>
-
     <div class="main">
         <!--Thanh-->
         <div class="header">
@@ -31,12 +29,10 @@
                 <li><a href="">Thông tin </a></li>
                 <li><a class="  btn-js-dangky">Đăng ký</a></li>
                 <li><a class="btn-js-dangnhap">Đăng nhập</a></li>
-
             </ul>
 
 
         </div>
-
         <!-- end thanh -->
         <!-- modal -->
         <div class="modal dangky">
@@ -45,8 +41,6 @@
                 <!--  begin modal-inner  -->
                 <div class="modal_inner">
                     <!-- form login .. -->
-
-
                     <div class="greeting">
                         <div class="greeting_group">
                             <h3 id="h">Chào mừng bạn đến với CNTT2.MUSIC</h3>
@@ -55,8 +49,6 @@
                                 khác của các nghệ sĩ trên thế giới.
                             </p>
                         </div>
-
-
                     </div>
                     <!-- sign -->
                     <div class="sign">
@@ -93,6 +85,7 @@
 
                     </div>
                     <!-- end sign -->
+
                 </div>
             </div>
         </div>
@@ -107,9 +100,8 @@
                     <div class="greeting">
                         <div class="greeting_group">
                             <h3 id="h">Chào mừng bạn đến với CNTT2.MUSIC</h3>
-
-                            <p id="intro"> Cung cấp nhạc, podcast và video ký thuật số<br>
-                                cho phép bạn truy cập hàng triệu bài hát và các nội dung <br>
+                            <p id="intro"> Cung cấp nhạc, podcast và video ký thuật số
+                                cho phép bạn truy cập hàng triệu bài hát và các nội dung
                                 khác của các nghệ sĩ trên thế giới.
                             </p>
                         </div>
@@ -135,7 +127,7 @@
                                 <div class="sign-form-group">
                                     <i class="ti-lock"></i><input type="text" class="sign-form-input"
                                         placeholder="Nhập vào mật khẩu">
-                                </div> class="sign-check">
+                                </div>
 
                                 <div class="sign-check1"><i class="ti-check"></i><label class="sign-radio"> Nhớ tài
                                         khoản</label></div>
@@ -154,11 +146,13 @@
 
                     </div>
                     <!-- end sign -->
+
                 </div>
             </div>
         </div>
         <!-- end dang nhap -->
         <!--Phúc Hưng-->
+
         <div class="slider">
             <style>
                 @keyframes fade {
@@ -177,58 +171,55 @@
                     }
                 }
             </style>
-
             <div class="slideshow-container">
-
-                <div class="mySlides fade">
+                <div class="mySlides">
+                    <div class="numbertext nd1">Hôm nay nghe gì ?</div>
+                    <img src="../slider2.jpg" style="width:100% ">
+                    <div class="text nd2 ">Nghe những ca khúc yêu thích và khám phá âm nhạc dành riêng cho bạn </div>
+                </div>
+                <div class="mySlides">
                     <div class="numbertext nb1">Thư giãn</div>
                     <img src="../slider2.jpg" style="width:100% ">
                     <div class="text nb2 ">Cuối tuần cùng những bản nhạc nhẹ nhàng </div>
                 </div>
-
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext na1 ">Hòa tấu cùng Band</div>
                     <img src="../slider3.jpg" style="width:100% ">
                     <div class="text na2 ">Hòa tấu guitar tình khúc - tuyển chọn những bài hát không lời hay nhất của
                         nhạc sĩ vô thường </div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides">
                     <div class="numbertext nc1">Concept - Kpop</div>
                     <img src="../slider4.jpg" style="width:100% ">
                     <div class="text nc2 ">Bài hát yêu thích nhất trong các concept được đón nhận nồng nhiệt </div>
                 </div>
-
-                <div class="dot-group" style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-
-
             </div>
-            <br>
 
-
+            <div class="dot-group" style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <script>
-                let slideIndex = 0;
-                showSlides();
-
-                function showSlides() {
+                let x = 0;
+                showSlidess();
+                function showSlidess() {
                     let i;
                     let slides = document.getElementsByClassName("mySlides");
-                    let dots = document.getElementsByClassName("dot");
+                    let dot = document.getElementsByClassName("dot");
                     for (i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                     }
-                    slideIndex++;
-                    if (slideIndex > slides.length) { slideIndex = 1 }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
+                    x++;
+                    if (x > slides.length) { x = 1 }
+                    for (i = 0; i < dot.length; i++) {
+                        dot[i].className = dot[i].className.replace(" active", "");
                     }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
-                    setTimeout(showSlides, 2000);
+                    slides[x - 1].style.display = "block";
+                    dot[x - 1].className += "active";
+                    setTimeout(showSlidess, 2000);
                 }
             </script>
         </div>
@@ -239,10 +230,10 @@
                 <div class="album-item-content" style="background-color:  #d8c0f9;">
                     <div class="be">BE</div>
                     <div class="be1">-BTS-</div>
-                    <p class="be2">Là "bức thư của hy vọng"
-                        <br> Be chạm vào các chủ đề về sự thoải mái,
-                        <br>Cô đơn, lo lắng, trầm cảm,thất vọng,bồn
-                        <br>chồn, buồn bã, hy vọng, kết nối và niềm vui.
+                    <p class="kill2">Là "bức thư của hy vọng"
+                        Be chạm vào các chủ đề về sự thoải mái,
+                        Cô đơn, lo lắng, trầm cảm,thất vọng,bồn
+                        chồn, buồn bã, hy vọng, kết nối và niềm vui.
                     </p>
                 </div>
             </div>
@@ -252,9 +243,9 @@
                     <div class="kill">Kill This Love</div>
                     <div class="kill1">-black pink-</div>
                     <p class="kill2">Câu chuyện của những cô gái quyết tâm
-                        <br> Kết liễu tình yêu, thứ đã mang lại nhiều
-                        <br>khổ đau, thương tổn, quyết tâm thay đổi
-                        <br>bản thân để trở nên mạnh mẽ hơn.
+                        Kết liễu tình yêu, thứ đã mang lại nhiều
+                        khổ đau, thương tổn, quyết tâm thay đổi
+                        bản thân để trở nên mạnh mẽ hơn.
                     </p>
                 </div>
             </div>
@@ -263,10 +254,10 @@
                 <div class="album-item-content" style="background-color:  #d8c0f9;">
                     <div class="des">Despacito</div>
                     <div class="des1">- Luis Fonsi -</div>
-                    <p class="des2">"Despacito" received generally favorable
-                        <br> reviews from music critics, who praised
-                        <br>the fusion between Latin and urban
-                        <br>rhythms, its catchiness, and its text painting.
+                    <p class="kill2">"Despacito" received generally favorable
+                        reviews from music critics, who praised
+                        the fusion between Latin and urban
+                        rhythms, its catchiness, and its text painting.
                     </p>
                 </div>
             </div>
@@ -275,11 +266,11 @@
                 <div class="album-item-content" style="background-color:  #d8c0f9;">
                     <div class="see">See you again</div>
                     <div class="see1">- Wiz Khalifa -</div>
-                    <p class="see2">"It just seemed to occur from out of
-                        <br>nowhere. And basically 10 minutes later
-                        <br>Justin(Frank[DJ Frank E]) and I wrote it,
-                        <br>we sent it off, and I thougth we'd never
-                        <br>hear about it again"-Charlie Puth.
+                    <p class="kill2">"It just seemed to occur from out of
+                        nowhere. And basically 10 minutes later
+                        Justin(Frank[DJ Frank E]) and I wrote it,
+                        we sent it off, and I thougth we'd never
+                        hear about it again"-Charlie Puth.
                     </p>
                 </div>
             </div>
@@ -288,9 +279,9 @@
                 <div class="album-item-content" style="background-color:  #d8c0f9;">
                     <div class="chung">Chúng ta</div>
                     <div class="chung1">- MTP -</div>
-                    <p class="chung2">Bài hát được Sơn Tùng M-TP viết để dành
-                        <br>tặng người hâm mộ, được phát hành để dọn
-                        <br>đường cho EP.
+                    <p class="kill2">Bài hát được Sơn Tùng M-TP viết để dành
+                        tặng người hâm mộ, được phát hành để dọn
+                        đường cho EP.
                     </p>
                 </div>
             </div>
@@ -299,9 +290,9 @@
                 <div class="album-item-content" style="background-color:  #d8c0f9;">
                     <div class="adele">21</div>
                     <div class="adele1">- Adele -</div>
-                    <p class="adele2">A sleeper hit, 21 defied the modest
-                        <br>commercial expectations of Adele's
-                        <br>independent record label XL.
+                    <p class="kill2">A sleeper hit, 21 defied the modest
+                        commercial expectations of Adele's
+                        independent record label XL.
                     </p>
                 </div>
             </div>
@@ -440,51 +431,139 @@
 
         <!--Mạnh Hùng-->
         <div class="info">
+            <h1>Thông tin</h1>
+            <div class="slideshow-container">
 
+                <div class="mySlidesHung fadeHung">
 
+                    <img src="../slider2.jpg" style="width:100%;">
+                    <div class="text">Ảnh 1</div>
+                </div>
+
+                <div class="mySlidesHung fadeHung">
+
+                    <img src="../slider3.jpg" style="width:100%">
+                    <div class="text">Ảnh 2</div>
+                </div>
+
+                <div class="mySlidesHung fadeHung">
+
+                    <img src="../slider4.jpg" style="width:100%">
+                    <div class="text">Ảnh 3</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
-        <div class="footer">
 
+
+        <div class="Footer" style="display: flex;">
+            <div class="footer-item">
+                <h1>Liên hệ với chúng tôi</h1>
+
+                <div class="footer-link">
+                    <a> <i class="ti-location-pin"></i>236,Hoàng Quốc Việt ,Cổ Nhuế 1,
+                        Bắc Từ Liêm ,Hà Nội </a>
+
+                    <a href=""><i class="ti-email"></i>CNTT2 MUSIC2@gmail.com</a>
+
+                    <a href=""><i class="ti-mobile"></i>0914536689</a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h1>Kết nối</h1>
+                <a href=""><i class="ti-facebook"></i>https://w.w.w.facebook.com'CNTT2MUSIC</a>
+                <br>
+                <a href=""><i class="ti-instagram"></i>CNTT2MUSIC.CTAHH</a>
+            </div>
+            <div class="footer-item">
+                <h1>Chính sách người dùng</h1>
+
+                <a href="">Chính sách khiếu nại</a>
+                <br>
+                <br>
+                <a href="">Chương trình cho các thành viên</a>
+                <br>
+                <br>
+                <a href="">Chính sách hỗ trợ khác</a>
+            </div>
         </div>
+
+        <script>
+            const loginBtn = document.querySelector('.btn-js-dangnhap')
+            const modal = document.querySelector('.modal.dangnhap')
+            const modalClose = document.querySelector('.icon-close.dangnhap')
+            const modalClose1 = document.querySelector('.icon-close.dangky')
+            const loginBtn1 = document.querySelector('.btn-js-dangky')
+            const modal1 = document.querySelector('.modal.dangky')
+            function showLogin() {
+                modal.classList.add('open')
+
+            }
+
+
+            function showLogin1() {
+                modal1.classList.add('open')
+
+            }
+            function hideShowLogin1() {
+                modal1.classList.remove('open')
+
+            }
+            function hideShowLogin() {
+                modal.classList.remove('open')
+
+            }
+            function dangnhap() { showLogin(); hideShowLogin1() }
+            function dangky() { showLogin1(); hideShowLogin() }
+            loginBtn.addEventListener('click', dangnhap)
+            // loginBtn.addEventListener('click',hideShowLogin1)
+
+            loginBtn1.addEventListener('click', dangky)
+            modalClose1.addEventListener('click', hideShowLogin1)
+            modalClose.addEventListener('click', hideShowLogin)
+            document.querySelector('.btn.btn-dangnhap').addEventListener('click', dangnhap)
+            document.querySelector('.btn.btn-dangky').addEventListener('click', dangky)
+
+            // Manh hung slider
+            let slideIndexH = 1;
+            showSlides(slideIndexH);
+
+            function plusSlides(n) {
+                showSlides(slideIndexH += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndexH = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlidesHung");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndexH = 1 }
+                if (n < 1) { slideIndexH = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndexH - 1].style.display = "block";
+                dots[slideIndexH - 1].className += " active";
+            }
+
+        </script>
     </div>
-
-    <script>
-        const loginBtn = document.querySelector('.btn-js-dangnhap')
-        const modal = document.querySelector('.modal.dangnhap')
-        const modalClose = document.querySelector('.icon-close.dangnhap')
-        const modalClose1 = document.querySelector('.icon-close.dangky')
-        const loginBtn1 = document.querySelector('.btn-js-dangky')
-        const modal1 = document.querySelector('.modal.dangky')
-        function showLogin() {
-            modal.classList.add('open')
-
-        }
-
-
-        function showLogin1() {
-            modal1.classList.add('open')
-
-        }
-        function hideShowLogin1() {
-            modal1.classList.remove('open')
-
-        }
-        function hideShowLogin() {
-            modal.classList.remove('open')
-
-        }
-        function dangnhap() { showLogin(); hideShowLogin1() }
-        function dangky() { showLogin1(); hideShowLogin() }
-        loginBtn.addEventListener('click', dangnhap)
-        // loginBtn.addEventListener('click',hideShowLogin1)
-
-        loginBtn1.addEventListener('click', dangky)
-        modalClose1.addEventListener('click', hideShowLogin1)
-        modalClose.addEventListener('click', hideShowLogin)
-        document.querySelector('.btn.btn-dangnhap').addEventListener('click', dangnhap)
-        document.querySelector('.btn.btn-dangky').addEventListener('click', dangky)
-
-    </script>
 </body>
 
 </html>

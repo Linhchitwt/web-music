@@ -15,12 +15,12 @@
 }
 
 .artist-tilte h1 {
-   font-size: 5rem;
+   font-size: 5em;
    padding: 40px 0 0 0;
 }
 
 .artist-tilte p {
-   font-size: 1.5rem;
+   font-size: 1.5em;
    padding: 20px 80px 40px 80px;
    text-align: justify;
    text-align-last: center
@@ -38,8 +38,8 @@
 }
 
 .singer-item1 {
-   margin: 0 0 0 74px;
-
+   /* margin: 0 0 0 74px; */
+   margin-left: 5%;
    flex: 1;
    justify-content: center;
    width: 45%;
@@ -71,7 +71,7 @@
 }
 
 .singer-item1 h2 {
-   font-size: 2.5rem;
+   font-size: 2.5em;
    text-align: center;
    padding: 0px 0 10px 0;
 
@@ -86,8 +86,8 @@
 
 
 .singer-item2 {
-   margin: 0 74px 0 0;
-
+   /* margin: 0 74px 0 0; */
+   margin-right: 5%;
    flex: 1;
    align-self: flex-end;
 
@@ -118,7 +118,7 @@
 }
 
 .singer-item2 h2 {
-   font-size: 2.5rem;
+   font-size: 2.5em;
    text-align: center;
    padding: 0px 0 10px 0;
 
@@ -140,9 +140,11 @@
    width: 180px
 }
 
+
 .TaylorSwift img {
    width: 180px;
    height: 240px;
+
 }
 
 
@@ -151,19 +153,19 @@
    flex-direction: column;
    padding: 20px 60px 60px 60px;
    background-image: linear-gradient(180deg, var(--back-color), white);
-
+   justify-content: space-between;
 
 }
 
 .news-main {
    display: flex;
    color: white;
-
+   justify-content: center;
 }
 
 .news-tilte {
    text-align: center;
-   font-size: 2.5rem;
+   font-size: 2.5em;
    width: 40%;
 
 }
@@ -188,13 +190,13 @@
 }
 
 .musicBank-header h1 {
-   font-size: 2.5rem;
+   font-size: 2.5em;
    margin: 0 0 10px 10px;
    color: var(--font-color);
 }
 
 .musicBank-header p {
-   font-size: 1.5rem;
+   font-size: 1.5em;
 }
 
 .topMucsic {
@@ -209,29 +211,45 @@
 }
 
 .top h2 {
-   font-size: 2rem;
+   font-size: 2em;
    margin: 0 0 20px 0;
    color: var(--font-color);
 }
 
 .topMucsic img {
    width: 40%;
-   height: 344px;
+   height: 150%;
+
 }
 
-.new-icon {}
-
-.new-icon h2 {
+.new-icon {
    text-align: center;
    color: rgb(102, 45, 145);
 
-   font-size: 4rem;
+}
+
+.new-icon h2 {
+
+   font-size: 2.5em;
 }
 
 .fa-regular {
-   color: rgb(102, 45, 145);
+   font-size: 3em;
+}
 
-   font-size: 6rem;
+.fa-regular :hover {
+   cursor: pointer;
+   background-color: antiquewhite;
+}
+
+@media(min-width=1024px) {
+   .singer-item1 {
+      margin-left: 60px;
+   }
+
+   .singer-item2 {
+      margin-right: 60px;
+   }
 }
 
 @media(max-with=1024px)and(min-with=724px) {}

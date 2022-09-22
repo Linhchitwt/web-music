@@ -6,7 +6,7 @@ img {
     vertical-align: middle;
 }
 
-.slideshow-container {
+.slider .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
@@ -103,15 +103,15 @@ img {
 
 }
 
-.dot {
+.slider .dot {
     position: relative;
     height: 0px;
     width: 0px;
     margin: 0 2px;
     background-color: #fff;
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.6s ease;
+    display: flex;
 }
 
 
