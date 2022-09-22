@@ -219,18 +219,19 @@
    height: 344px;
 }
 
-.new-icon{
+.new-icon {}
+
+.new-icon h2 {
    text-align: center;
    color: rgb(102, 45, 145);
-   padding-top: 20px;
-   position: relative;
- }
- .new-icon h2{
-    font-size: 1.8rem;
- }
- 
- .new-icon i {
-    font-size:3rem;
-    position: absolute;
- }
+
+   font-size: 4rem;
+}
+
+.fa-regular {
+   color: rgb(102, 45, 145);
+
+   font-size: 6rem;
+}
+
 @media(max-with=1024px)and(min-with=724px) {}

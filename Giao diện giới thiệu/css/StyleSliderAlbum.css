@@ -34,44 +34,67 @@ img {
     transform: translate(-50%, -50%);
 }
 
+.nd1 {
+    color: #ba9bc9;
+    left: 30%;
+    top: 65%;
+    font-size: 70pt;
+    text-shadow: 5px 2px 4px grey;
+    font-family: Times, serif;
+
+}
+
+.nd2 {
+    font-size: 45px;
+    left: 50%;
+    top: 70%;
+    font-family: Times, serif;
+}
+
 .nb1 {
     left: 20%;
-    top: 75%;
-    font-size: 50pt;
+    top: 70%;
+    font-size: 70pt;
     text-shadow: 5px 2px 4px grey;
     font-weight: bold;
+    font-family: Times, serif;
 }
 
 .nb2 {
-    font-size: 30px;
-    left: 31%;
-    top: 80%;
+    font-size: 50px;
+    left: 37%;
+    top: 75%;
+    font-family: Times, serif;
 }
 
 .na1 {
     left: 25%;
-    font-size: 45pt;
+    font-size: 50pt;
     top: 80%;
     text-shadow: 5px 2px 4px grey;
+    font-family: Times, serif;
 }
 
 .na2 {
-    font-size: 18pt;
-    left: 44%;
-    top: 82%;
+    font-size: 25pt;
+    left: 49.5%;
+    top: 83%;
+    font-family: Times, serif;
 }
 
 .nc1 {
-    font-size: 50pt;
+    font-size: 80pt;
     top: 80%;
     left: 25%;
     text-shadow: 5px 2px 4px grey;
+    font-family: Times, serif;
 }
 
 .nc2 {
-    font-size: 25pt;
+    font-size: 30pt;
     top: 85%;
-    left: 45.5%;
+    left: 38.5%;
+    font-family: Times, serif;
 }
 
 .album {
@@ -80,15 +103,16 @@ img {
 
 }
 
-/* .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
+.dot {
+    position: relative;
+    height: 0px;
+    width: 0px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 
 
 .active {
