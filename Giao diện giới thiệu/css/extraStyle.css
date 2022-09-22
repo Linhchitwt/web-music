@@ -1,0 +1,71 @@
+#main-content{
+    height: 680px;
+    overflow-y: auto;
+}
+#main-content h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+#main-content .card{
+    cursor: pointer;
+    height: 150px;   
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+#main-content .card:hover {
+-webkit-transform:scale(0.9); /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+-moz-transform:scale(0.9); /*Thu nhỏ đối với Mozilla*/
+-o-transform:scale(0.9); /*Thu nhỏ đối với Opera*/
+-webkit-transition-duration: 0.5s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+-moz-transition-duration: 0.5s; /*Như trên*/
+-o-transition-duration: 0.5s; /*Như trên*/
+opacity: 0.7; /*Độ mờ của hình ảnh*/
+margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.trend-title{
+color: aliceblue;
+}
+
+.trend-des{
+    margin-top: 10px;
+color: antiquewhite;
+}
+.card-body {
+padding-top: 30px;
+text-shadow: 0.1em 0.1em 0.2em rgba(1, 24, 26, 0.712);
+
+}
+#main-content__feed{
+    width: 100%;
+    padding:1rem 2rem;
+    flex:1;
+    border-radius: 2rem;
+    padding-bottom:2rem;
+    height: 680px;
+    overflow-y: auto;
+}
+#main-content__feed .card{
+    border-radius:10px ;
+    cursor: pointer;
+    height: 200px;
+}
+#main-content__feed .card:hover{
+    background-color: rgba(138, 145, 241, 0.116);
+}
+#main-content__feed .card-body{
+padding: 10px 10px;
+display: flex;
+}
+.card-body__img{
+    width: 50%;
+    height: 80%;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.card-body p {
+    width: 50%;
+    padding-left: 10px;
+}
