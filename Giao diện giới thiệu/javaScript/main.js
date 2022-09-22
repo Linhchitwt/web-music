@@ -15,7 +15,7 @@ const musics =[
     {
         id: 0,
         number: '01',
-        file:'ntt.mp3',
+        file:'assest_mp3_ntt.mp3',
         title: 'Ngày tận thế',
         artist: 'Tóc Tiên',
         time: '3:52',
@@ -25,7 +25,7 @@ const musics =[
     {
         id: 1,
         number: '02',
-        file: 'catena.mp3',
+        file: 'assest_mp3_catena.mp3',
         title: 'Có ai thương em như anh',
         artist: 'Tóc Tiên',
         time: '3:51',
@@ -35,7 +35,7 @@ const musics =[
     {
         id: 2,
         number: '03',
-        file: 'edcnm.mp3',
+        file: 'assest_mp3_edcnm.mp3',
         title: 'Em đã có người mới',
         artist: 'Tóc Tiên',
         time: '3:20',
@@ -45,7 +45,7 @@ const musics =[
     {
         id: 3,
         number: '04',
-        file: 'vdcc.mp3',
+        file: 'assest_mp3_vdcc.mp3',
         title: 'Vũ điệu cồng chiêng',
         artist: 'Tóc Tiên',
         time: '3:24',
@@ -55,7 +55,7 @@ const musics =[
     {
         id: 4,
         number: '05',
-        file: 'ttbdty.mp3',
+        file: 'assest_mp3_ttbdty.mp3',
         title: 'Trên tình bạn dưới tình yêu',
         artist: 'Min',
         time: '3:19',
@@ -66,7 +66,7 @@ const musics =[
 
 //set mặc định bài 1 phát đầu
 let indexSong = 0;
-song.setAttribute('src', `./assests/mp3/${musics[indexSong].file}`); 
+song.setAttribute('src', `/mp3/${musics[indexSong].file}`); 
 //==============================================
 //                  THÊM BÀI HÁT 
 //==============================================
@@ -160,7 +160,7 @@ function changeSong(dir) {
     }
     resetSong(indexSong);
     playBtn.innerHTML = `<i class="fas fa-pause-circle pause-icon main-icon main-icon--big"></i>`;
-    song.setAttribute('src', `./assests/mp3/${musics[indexSong].file}`); 
+    song.setAttribute('src', `/mp3/${musics[indexSong].file}`); 
     song.play();
 }
 //==============================================
@@ -211,7 +211,7 @@ playList.onclick = function(e) {
     isPlaying = false;
     
     playBtn.innerHTML = `<i class="fas fa-pause-circle pause-icon main-icon main-icon--big"></i>`;
-    song.setAttribute('src', `./assests/mp3/${musics[indexSong].file}`); 
+    song.setAttribute('src', `/mp3/${musics[indexSong].file}`); 
     song.play();
     resetSong(songNoteindex);
 

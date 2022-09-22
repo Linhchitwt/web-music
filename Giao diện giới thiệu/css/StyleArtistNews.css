@@ -194,23 +194,24 @@
  }
  .topMucsic img{
     width: 40%;
-    height: 344px;
- }7
- .new-icon{
-    
+    height: 150%;
     
  }
+ .new-icon{
+   text-align: center;
+   color: rgb(102, 45, 145);
+ }
  .new-icon h2{
-    text-align: center;
-    color: rgb(102, 45, 145);
     
-    font-size: 4rem;
+   
+    
+    font-size: 2.5rem;
  }
  
  .fa-regular{
-    color: rgb(102, 45, 145);
+   
     
-    font-size:6rem;
+    font-size:3rem;
  }
  @media(max-with=1024px)and(min-with=724px){
     
