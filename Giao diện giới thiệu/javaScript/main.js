@@ -11,6 +11,7 @@ const shuffle = document.querySelector('.shuffle-song');
 const volumeControllerLeft = document.querySelector('.fa-volume-mute');
 const volumeControllerRight = document.querySelector('.fa-volume-up');
 const valueVolume = document.querySelector('.volume');
+
 const musics =[
     {
         id: 0,
