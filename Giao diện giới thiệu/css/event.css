@@ -2,11 +2,17 @@
 #main-content {
     width: 100%;
       height: 100%;
+      margin-top: 15px;
     }
+
 .box-scroll {
     width: 100%;
-    height: 650px;
+    height: 645px;
     overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 0;
+
 }
 #main-content-event {
     text-align: center;
