@@ -73,7 +73,7 @@ a {
 ======================================*/
 #navbar {
     background-color: #fff;
-    width: calc(100% / 5);
+    width: calc(100% / 4);
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     overflow: hidden;
