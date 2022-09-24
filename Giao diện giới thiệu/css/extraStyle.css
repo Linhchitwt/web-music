@@ -1,9 +1,16 @@
 body {
     font-family: 'Poppins';
 }
+
 #main-content {
     height: 680px;
     overflow-y: auto;
+}
+
+#main-content__Notable header,
+#main-content__feed header,
+#main-content header {
+    margin-bottom: 20px;
 }
 
 #main-content h2,
@@ -92,11 +99,20 @@ p {
     padding-left: 10px;
 }
 
+#sidebar {
+    padding-left: 10px;
+}
+
+/* ------------------------------------------------------------------------------- */
 /* Notable */
 #main-content__Notable {
     width: 75%;
     height: 680px;
     overflow-y: auto;
+}
+
+#main-content__Notable .main-content__header-nav {
+    padding-left: 20px;
 }
 
 .Notable-slider {

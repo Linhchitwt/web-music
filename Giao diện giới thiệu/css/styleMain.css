@@ -15,9 +15,11 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 /*=============================================
                    THANH SCROLL
 ==============================================*/
@@ -58,8 +60,7 @@ a {
 }
 
 #container {
-    width: 110rem;
-    margin: 6% 0;
+    width: 100%;
     background-color: #e7e8f3;
     border-radius: 2rem;
     display: flex;
@@ -216,6 +217,8 @@ a {
     width: calc(100% / 4 * 2 + 2rem);
 }
 
+#main-content__Notable header,
+#main-content__feed header,
 #main-content header {
     margin-top: 1.2rem;
     display: flex;
