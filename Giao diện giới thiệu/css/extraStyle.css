@@ -1,3 +1,6 @@
+body {
+    font-family: 'Poppins';
+}
 #main-content {
     height: 680px;
     overflow-y: auto;
@@ -113,7 +116,6 @@ p {
     font-weight: 600;
     font-size: 1.8rem;
     color: #000;
-    font-family: 'Poppins';
 }
 
 /* Slider */
