@@ -19,6 +19,7 @@ p {
     margin: 0;
 }
 
+.Notable-Want .want-img,
 #main-content .card {
     cursor: pointer;
     height: 150px;
@@ -106,7 +107,7 @@ p {
 /* ------------------------------------------------------------------------------- */
 /* Notable */
 #main-content__Notable {
-    width: 75%;
+    width: 80%;
     height: 680px;
     overflow-y: auto;
 }
@@ -127,7 +128,7 @@ p {
 
 #main-content__Notable h2 {
     text-align: left;
-    padding: 10px 25px;
+    padding: 10px 0px;
     margin: 0;
     font-weight: 600;
     font-size: 1.8rem;
@@ -256,3 +257,48 @@ p {
 }
 
 /* ************************Want to Listen******************************* */
+.want-frames {
+    padding-bottom: 20px;
+}
+
+.want-img {
+    width: 154px;
+    cursor: pointer;
+
+}
+
+.want-img__name {
+    margin-top: -5px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.col-lg-pull-2 {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+/* *************************MUSIC PARTNER********************* */
+.music-partner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.music-partner__items {
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.patrner {
+    width: 100px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    object-fit: contain;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

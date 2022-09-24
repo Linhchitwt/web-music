@@ -57,6 +57,8 @@ a {
     align-items: center;
     overflow: hidden;
     min-height: 100vh;
+    font-family: 'Poppins';
+
 }
 
 #container {
@@ -73,7 +75,7 @@ a {
 ======================================*/
 #navbar {
     background-color: #fff;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     overflow: hidden;
@@ -210,11 +212,13 @@ a {
 /*======================================
             MAIN-CONTENT
 ======================================*/
+#main-content__Notable,
+#main-content__feed,
 #main-content {
     background-color: #e7e8f3;
     height: 100%;
     padding: 1rem 3rem;
-    width: calc(100% / 4 * 2 + 2rem);
+    width: calc(100% / 5 * 3 + 2rem);
 }
 
 #main-content__Notable header,
