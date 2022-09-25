@@ -267,7 +267,7 @@ p {
     width: 154px;
     position: absolute;
     top: 0;
-    color: #9886aa;
+    color: #cdc1d8;
     z-index: 30;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
@@ -275,13 +275,19 @@ p {
     display: none;
 }
 
+.want-frames h5 {
+    text-align: center;
+}
+
 .want-frames i {
     font-size: 40px;
     padding: 55px 0;
 }
+
 .want-frames:hover .want-play {
     display: block;
 }
+
 .want-img {
     width: 154px;
     cursor: pointer;

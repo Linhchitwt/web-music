@@ -325,11 +325,6 @@ a {
     margin: unset;
 }
 
-.bars-left,
-.bars-right {
-    display: none;
-}
-
 .play-btn {
     background-color: #000;
     color: #fff;
