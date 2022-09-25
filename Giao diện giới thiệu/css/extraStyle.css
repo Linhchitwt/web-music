@@ -259,8 +259,29 @@ p {
 /* ************************Want to Listen******************************* */
 .want-frames {
     padding-bottom: 20px;
+    position: relative;
 }
 
+.want-frames .want-play {
+    height: 150px;
+    width: 154px;
+    position: absolute;
+    top: 0;
+    color: #9886aa;
+    z-index: 30;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: none;
+}
+
+.want-frames i {
+    font-size: 40px;
+    padding: 55px 0;
+}
+.want-frames:hover .want-play {
+    display: block;
+}
 .want-img {
     width: 154px;
     cursor: pointer;
@@ -292,7 +313,7 @@ p {
     margin-right: auto;
 }
 
-.patrner {
+.partner {
     width: 100px;
     height: 60px;
     background-color: #fff;
