@@ -128,6 +128,11 @@ p {
 
 /* ------------------------------------------------------------------------------- */
 /* Notable */
+
+.Notable-Want .row {
+    display: flex;
+    justify-content: space-around;
+}
 #main-content__Notable {
     width: 80%;
     height: 680px;
@@ -328,10 +333,6 @@ h4 {
     font-size: 13px;
 }
 
-.col-lg-pull-2 {
-    margin-right: 30px;
-    margin-left: 10px;
-}
 
 /* *************************MUSIC PARTNER********************* */
 .music-partner {
