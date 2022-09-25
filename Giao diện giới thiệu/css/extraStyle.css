@@ -112,6 +112,12 @@ p {
     overflow-y: auto;
 }
 
+#main-content__Notable h2,
+h5,
+h4 {
+    cursor: default;
+}
+
 #main-content__Notable .main-content__header-nav {
     padding-left: 20px;
 }
