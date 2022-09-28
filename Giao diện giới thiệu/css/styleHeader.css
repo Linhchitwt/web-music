@@ -1,0 +1,254 @@
+.name-web {
+    display: inline-block;
+    color: var(--header-text-color);
+    line-height: 46px;
+    padding: 0 26px;
+    font-size: 26px;
+    text-shadow: 5px 2px 4px rgb(214, 143, 190);
+
+}
+
+#nav {
+    float: right;
+}
+
+#nav li {
+
+    display: inline-block;
+}
+
+#nav li a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#nav li a:hover {
+    color: #fff;
+    /* background-color: rgb(54, 50, 91); */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal.dangnhap.open {
+    display: flex;
+}
+
+.modal.dangky.open {
+    display: flex;
+}
+
+.modal_overlay {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+.modal_body {
+    background-color: black;
+    z-index: 100;
+
+    height: 525px;
+    margin: 10px 20%;
+    position: relative;
+    background: url('/Giới thiệu/nền/nền-01.png');
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* display: in; */
+
+}
+
+/* .form-login {
+    max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+    position: absolute;
+    /* position: relative; */
+/* background-color: rgb(109, 116, 116); */
+/* background:url('/Giới thiệu/đăng nhập và đăng kí/nền-01.png') ; */
+
+.modal_inner {
+    display: flex;
+}
+
+.greeting {
+    width: 410px;
+    height: 529px;
+    /* background-color: bisque; */
+
+}
+
+.greeting_group {
+    top: 60px;
+    left: 8px;
+    position: relative;
+
+}
+
+#h {
+    text-align: center;
+    line-height: 1.6;
+    color: rgb(56, 33, 101);
+
+}
+
+#intro {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.sign {
+    /* left: 455px; */
+    /* top: 80px; */
+    /* position: relative; */
+    width: 410px;
+    height: 529px;
+    /* background-color: rgb(95, 90, 90); */
+}
+
+.icon-close {
+    float: right;
+    margin: 5px;
+}
+
+.icon-close:hover {
+    color: #ccc;
+}
+
+.sign-group {
+    top: 170px;
+    left: 80px;
+    position: relative;
+    width: 250px;
+    height: 500px;
+
+
+}
+
+.sign-header {
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.sign-heading {
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.sign-form-input {
+    height: 35px;
+    width: 90%;
+    margin-bottom: 16px;
+    margin-left: 5px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+
+}
+
+.sign-form-input.repeat {
+    margin-left: 20px;
+}
+
+.ti-lock,
+.ti-user {
+    color: #fff;
+}
+
+.sign-control {
+
+    text-align: center;
+
+}
+
+.btn {
+    min-width: 100px;
+    background-color: bisque;
+    font-size: 0.9rem;
+    line-height: 32px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 16px;
+    color: #fff;
+    background-color: rgb(152, 0, 90);
+
+}
+
+.btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.btn.btn-dangnhap {
+    background-color: rgb(96, 45, 145);
+}
+
+.btn.btn-dangky {
+    background-color: rgb(96, 45, 145);
+}
+
+.sign-check {
+    display: flex;
+
+
+}
+
+.sign-check1 {
+    width: 45%;
+    display: inline;
+    margin-right: 16px;
+    margin-left: 20px;
+
+
+
+
+
+}
+
+.sign-radio {
+    font-size: 0.7rem;
+    color: #fff;
+    float: center;
+
+}
+
+.ti-check {
+    background-color: #fff;
+    border-radius: 50%;
+    /* display: none; */
+
+}

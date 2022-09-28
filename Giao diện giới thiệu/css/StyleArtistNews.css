@@ -1,0 +1,255 @@
+.artist {
+   display: block;
+   height: inherit;
+   width: 100%;
+   background-image: url("/Giới thiệu/nền/Untitled-2-01.png");
+   background-repeat: repeat;
+   background-size: 100%;
+   box-sizing: border-box;
+   background-origin: content-box;
+   color: aliceblue;
+   padding: 0 10 10 0;
+   overflow: hidden;
+   background-size: contain;
+
+}
+
+.artist-tilte h1 {
+   font-size: 5em;
+   padding: 40px 0 0 0;
+}
+
+.artist-tilte p {
+   font-size: 1.5em;
+   padding: 20px 80px 40px 80px;
+   text-align: justify;
+   text-align-last: center
+}
+
+.artist h1 {
+
+   text-align: center;
+}
+
+.singer {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.singer-item1 {
+   /* margin: 0 0 0 74px; */
+   margin-left: 5%;
+   flex: 1;
+   justify-content: center;
+   width: 45%;
+
+   display: flex;
+   height: 218px;
+
+}
+
+.singer-item1 img {
+
+   width: 35%;
+
+
+}
+
+.singer-item1 div {
+   display: flex;
+
+   flex-direction: column;
+   padding: 10px 10px 0 0;
+   margin: 0px 0 0px 0;
+   text-align: justify;
+   background-image: linear-gradient(270deg, var(--singer1-color), var(--singer2-color));
+
+
+
+
+}
+
+.singer-item1 h2 {
+   font-size: 2.5em;
+   text-align: center;
+   padding: 0px 0 10px 0;
+
+}
+
+.singer-item1 p {
+   margin: 20px 0 0px 0;
+   padding: 0 10px 0 10px;
+}
+
+
+
+
+.singer-item2 {
+   /* margin: 0 74px 0 0; */
+   margin-right: 5%;
+   flex: 1;
+   align-self: flex-end;
+
+   width: 45%;
+   height: 218px;
+   display: flex;
+}
+
+.singer-item2 img {
+   justify-self: start;
+   width: 40%;
+   height: 218px;
+
+
+}
+
+.singer-item2 div {
+   display: flex;
+
+   flex-direction: column;
+   padding: 10px 10px 0 0;
+   margin: 0px 0 0px 0;
+   text-align: justify;
+   background-image: linear-gradient(90deg, var(--singer1-color), var(--singer2-color));
+
+
+
+}
+
+.singer-item2 h2 {
+   font-size: 2.5em;
+   text-align: center;
+   padding: 0px 0 10px 0;
+
+}
+
+.singer-item2 p {
+   margin: 20px 0 0px 0;
+   padding: 0 10px 0 10px;
+
+}
+
+
+.CharliePuth img,
+.JustinBieber img,
+.IU img,
+.Rihanna img,
+.MTP img {
+   height: 240px;
+   width: 180px
+}
+
+
+.TaylorSwift img {
+   width: 180px;
+   height: 240px;
+
+}
+
+
+.news {
+   display: flex;
+   flex-direction: column;
+   padding: 20px 60px 60px 60px;
+   background-image: linear-gradient(180deg, var(--back-color), white);
+   justify-content: space-between;
+
+}
+
+.news-main {
+   display: flex;
+   color: white;
+   justify-content: center;
+}
+
+.news-tilte {
+   text-align: center;
+   font-size: 2.5em;
+   width: 40%;
+
+}
+
+.news-tilte h1 {
+   padding: 0 0 0 20px;
+
+}
+
+.musicBank {
+   display: flex;
+   flex-direction: column;
+   margin: 125px 20px 0 40px;
+   width: 50%;
+}
+
+.musicBank-header {
+   margin: 0 0 20px 0;
+   text-align: left;
+
+
+}
+
+.musicBank-header h1 {
+   font-size: 2.5em;
+   margin: 0 0 10px 10px;
+   color: var(--font-color);
+}
+
+.musicBank-header p {
+   font-size: 1.5em;
+}
+
+.topMucsic {
+   display: flex;
+   flex-direction: row;
+   text-align: right;
+   margin: 20px 20px 0 0;
+}
+
+.top {
+   margin: 0 20px 0 0;
+}
+
+.top h2 {
+   font-size: 2em;
+   margin: 0 0 20px 0;
+   color: var(--font-color);
+}
+
+.topMucsic img {
+   width: 40%;
+   height: 150%;
+
+}
+
+.new-icon {
+   text-align: center;
+   color: rgb(102, 45, 145);
+
+}
+
+.new-icon h2 {
+
+   font-size: 2.5em;
+}
+
+.fa-regular {
+   font-size: 3em;
+}
+
+.fa-regular :hover {
+   cursor: pointer;
+   background-color: antiquewhite;
+}
+
+@media(min-width=1024px) {
+   .singer-item1 {
+      margin-left: 60px;
+   }
+
+   .singer-item2 {
+      margin-right: 60px;
+   }
+}
+
+@media(max-with=1024px)and(min-with=724px) {}
