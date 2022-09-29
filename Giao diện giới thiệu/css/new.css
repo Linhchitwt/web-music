@@ -1,6 +1,14 @@
 /*======================================
             faceItems
 ======================================*/
+#main {
+    position: relative;
+}
+.face,
+#main-content {
+    height: 670px;
+    overflow-y: auto;
+}
 #sel {
     margin-top: 25px;
 }
@@ -129,8 +137,11 @@
 }
 
 .face {
-    padding-top: 70px;
     width: calc(100% / 5 - 5rem);
+    position: absolute;
+    right: 0;
+    top: 70px;
+    margin-right: 25px;
 }
 
 #faceitems {
