@@ -1,6 +1,11 @@
 /*======================================
             faceItems
 ======================================*/
+#main-content {
+    height: 670px;
+    overflow-y: auto;
+}
+
 #sel {
     margin-top: 25px;
 }
