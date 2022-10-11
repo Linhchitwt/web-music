@@ -1,0 +1,100 @@
+#main-content img {
+    cursor: pointer;
+}
+
+#navbar {
+    width: 25%;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+
+}
+
+#main {
+    padding-top: 20px;
+    height: 730px;
+}
+
+.box-scroll {
+    width: 100%;
+    height: 645px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+
+}
+
+.row {
+    width: 100%;
+    height: 150px;
+    background-color:rgb(96,45,145);
+    padding-left: 50px;
+    
+    
+}
+col {
+    height: 100%;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.nameArtist{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 6;
+    top: 60%;
+    left: 40%;
+    text-align: center;
+    transition: left 1s, top 1s, background-color 1s,height 1s, width 1s;
+  /* -moz-transition: margin-right 2s, background-color 2s, height 2s, width 2s; */
+  /* -webkit-transition: margin-right 2s, background-color 2s,height 2s, width 2s ; */
+
+}
+/* .col:hover .nameArtist{
+   
+    animation: mymove 1s infinite;
+    background-color: rgba(0,0,0,0);
+  
+
+      
+} */
+.col:hover .nameArtist {
+    left:15px;
+    top:0;
+    background-color: rgba(0,0,0,0.3);
+    width: 150px;
+    height: 150px;
+    line-height: 8;
+
+}
+.display {
+   position:absolute;
+   
+   top:190px;
+   /* background-color: rgb(24, 20, 20); */
+   left: 290px;
+   right: 46px;
+
+}
+.display-right{
+   position:absolute;
+   right: 0;
+}
+
+
+.col:hover img {
+    
+}
+
