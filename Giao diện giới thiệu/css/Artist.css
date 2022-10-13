@@ -97,4 +97,13 @@ img {
 .col:hover img {
     
 }
+.footers {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 260px;
+   
+   
+   
+ }
 
