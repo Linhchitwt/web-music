@@ -1,0 +1,13 @@
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\Model.dll.config
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\Model.dll
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\Model.pdb
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\EntityFramework.dll
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\PagedList.dll
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\EntityFramework.xml
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desktop\Web Music\web-music\MusicApp\Model\bin\Debug\PagedList.xml
+D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.dll
+D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.pdb

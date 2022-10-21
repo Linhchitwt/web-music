@@ -1,0 +1,11 @@
+slider2:
+- chữ lớn : màu tím - "Thư giãn"
+- chữ bé : màu tím nhạt hơn - "Cuối tuần cùng với những bản nhạc nhẹ nhàng"
+
+slider3:
+- chữ lớn: màu như slider 1 - "Hòa tấu cùng Band"
+- chữ nhỏ: màu như slide 1 - " Hòa tấu Guitar tình khúc - Tuyển chọn những bản nhạc không lời hay nhất của nhạc sĩ vô thường"
+
+slider4:
+- chữ lớn: màu như slider 1 - "Concept - Kpop"
+- chữ bé: màu như slider 1 - "Bài hát yêu thích nhất trong các concept được đón nhận nồng nhiệt"
