@@ -1,5 +1,6 @@
 ﻿using Model.Dao;
 using Model.EF;
+using MusicApp.Areas.Admin.Model;
 using MusicApp.Common;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,10 @@ using System.Web.Mvc;
 
 namespace MusicApp.Areas.Admin.Controllers
 {
+    
     public class UserController : BaseController
     {
+        Model1 db = new Model1();
         // GET: Admin/User
         public ActionResult Index(string searchString, int page = 1, int pageSize = 10)
         {
@@ -20,9 +23,59 @@ namespace MusicApp.Areas.Admin.Controllers
             return View(model);
         }
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult CreateTK()
         {
             return View();
+        }
+        [HttpPost]
+        //public ActionResult CreateTK(RegisterInfo obj)
+        //{
+        //    var dao = new UserDao();
+        //    KHACH_HANG kh = new KHACH_HANG();
+        //    kh.TenKH = obj.Name;
+        //    kh.DiaChi = obj.Address;
+        //    kh.SDT = obj.PhoneNumber;
+        //    kh.NgaySinh = obj.Birthday;
+        //    kh.CCCD = obj.Identitycard;
+        //    kh.TrangThai = true;
+        //    db.KHACH_HANG.Add(kh);
+        //    db.SaveChanges();
+
+        //    TAI_KHOAN tk = new TAI_KHOAN();
+        //    tk.UserName = obj.UserName;
+        //    tk.PassWord = obj.Password;
+        //    tk.TrangThai = true;
+        //    tk.MaPQ = "2";
+        //    int id = dao.Insert(tk);
+        //    if (id > 0)
+        //    {
+        //        return RedirectToAction("Index", "Home");
+        //    }
+        //    else
+        //    {
+        //        ModelState.AddModelError("", "Add user successfully");
+        //    }
+        //    return View("Index");
+            
+
+        //}
+        public ActionResult CreateTK(int id = 0)
+        {
+            TAI_KHOAN tk = new TAI_KHOAN();
+            var lasttk = db.TAI_KHOAN.OrderByDescending(c => c.ID).FirstOrDefault();
+            if (id != 0)
+            {
+                tk = db.TAI_KHOAN.Where(x => x.ID == id).FirstOrDefault<TAI_KHOAN>();
+            }
+            else if (lasttk == null)
+            {
+                tk.MaKH = "TK00000001";
+            }
+            else
+            {
+                tk.MaKH = "TK" + (Convert.ToInt32(lasttk.MaKH.Substring(8, lasttk.MaKH.Length - 8)) + 1).ToString("D3");
+            }
+            return View("Index");
         }
         [HttpGet]
 
@@ -33,29 +86,6 @@ namespace MusicApp.Areas.Admin.Controllers
             return View(user);
         }
 
-        [HttpPost]
-        public ActionResult Create(TAI_KHOAN user)
-        {
-            if (ModelState.IsValid)
-            {
-                var dao = new UserDao();
-
-                var encriptedMd5Pas = Encryptor.MD5Hash(user.PassWord);
-                user.PassWord = encriptedMd5Pas;
-
-                string userName = dao.Insert(user);
-                if (userName != "")
-                {
-                    return RedirectToAction("Index", "User");
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Add user successfully");
-                }
-            }
-            return View("Index");
-
-        }
         //public ActionResult Edit(TAI_KHOAN user)
         //{
         //    if (ModelState.IsValid)

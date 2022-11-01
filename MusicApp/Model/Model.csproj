@@ -64,6 +64,7 @@
     <Compile Include="EF\PHAN_QUYEN.cs" />
     <Compile Include="EF\SAN_PHAM.cs" />
     <Compile Include="EF\SU_KIEN.cs" />
+    <Compile Include="EF\sysdiagram.cs" />
     <Compile Include="EF\TAI_KHOAN.cs" />
     <Compile Include="EF\THEO_DOI.cs" />
     <Compile Include="EF\TIN_MOI.cs" />

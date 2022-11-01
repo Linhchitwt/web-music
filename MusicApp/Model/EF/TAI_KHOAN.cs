@@ -24,6 +24,9 @@ namespace Model.EF
         [StringLength(5)]
         public string MaPQ { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { get; set; }
+
         public virtual KHACH_HANG KHACH_HANG { get; set; }
 
         public virtual PHAN_QUYEN PHAN_QUYEN { get; set; }

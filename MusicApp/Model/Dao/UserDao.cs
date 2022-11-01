@@ -14,12 +14,19 @@ namespace Model.Dao
         {
             db = new Model1();
         }
-        public string Insert(TAI_KHOAN entity)
-        {
-            db.TAI_KHOAN.Add(entity);
-            db.SaveChanges();
-            return entity.UserName;
-        }
+        //public int Insert(TAI_KHOAN entity)
+        //{
+        //    db.TAI_KHOAN.Add(entity);
+        //    db.SaveChanges();
+        //    return entity.MaKH;
+        //}
+        //public string Insert(KHACH_HANG entity)
+        //{
+        //    db.KHACH_HANG.Add(entity);
+        //    db.TAI_KHOAN.Add(entity);
+        //    db.SaveChanges();
+        //    return entity.makh;
+        //}
         //public bool Update(TAI_KHOAN entity)
         //{
         //    try
@@ -54,9 +61,9 @@ namespace Model.Dao
             return model.ToPagedList(page, pageSize);
             //tao dau trang
         }
-        public TAI_KHOAN GetById(string userName)
+        public TAI_KHOAN GetBymaKH(string username)
         {
-            return db.TAI_KHOAN.SingleOrDefault(x => x.UserName == userName);
+            return db.TAI_KHOAN.SingleOrDefault(x => x.UserName == username);
         }
         public TAI_KHOAN ViewDetail(string username)
         {

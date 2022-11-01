@@ -21,6 +21,7 @@ namespace Model.EF
         public virtual DbSet<PHAN_QUYEN> PHAN_QUYEN { get; set; }
         public virtual DbSet<SAN_PHAM> SAN_PHAM { get; set; }
         public virtual DbSet<SU_KIEN> SU_KIEN { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TAI_KHOAN> TAI_KHOAN { get; set; }
         public virtual DbSet<THEO_DOI> THEO_DOI { get; set; }
         public virtual DbSet<TIN_MOI> TIN_MOI { get; set; }
