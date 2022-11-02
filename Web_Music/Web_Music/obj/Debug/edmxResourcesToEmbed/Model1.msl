@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MUSICModel1StoreContainer" CdmEntityContainer="MUSICEntities4">
+    <EntitySetMapping Name="ADMINs">
+      <EntityTypeMapping TypeName="MUSICModel1.ADMIN">
+        <MappingFragment StoreEntitySet="ADMIN">
+          <ScalarProperty Name="TenAD" ColumnName="TenAD" />
+          <ScalarProperty Name="DC" ColumnName="DC" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="STK" ColumnName="STK" />
+          <ScalarProperty Name="GT" ColumnName="GT" />
+          <ScalarProperty Name="NS" ColumnName="NS" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="URL_img" ColumnName="URL_img" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaAD" ColumnName="MaAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALbums">
+      <EntityTypeMapping TypeName="MUSICModel1.ALbum">
+        <MappingFragment StoreEntitySet="ALbum">
+          <ScalarProperty Name="TenAlbum" ColumnName="TenAlbum" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOP_DONG">
+      <EntityTypeMapping TypeName="MUSICModel1.HOP_DONG">
+        <MappingFragment StoreEntitySet="HOP_DONG">
+          <ScalarProperty Name="TenHD" ColumnName="TenHD" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="MaNSX" ColumnName="MaNSX" />
+          <ScalarProperty Name="TG" ColumnName="TG" />
+          <ScalarProperty Name="DiaDiem" ColumnName="DiaDiem" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="HTTT" ColumnName="HTTT" />
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACH_HANG">
+      <EntityTypeMapping TypeName="MUSICModel1.KHACH_HANG">
+        <MappingFragment StoreEntitySet="KHACH_HANG">
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="STK" ColumnName="STK" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="GT" ColumnName="GT" />
+          <ScalarProperty Name="CCCD" ColumnName="CCCD" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="makh" ColumnName="makh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGHEs">
+      <EntityTypeMapping TypeName="MUSICModel1.NGHE">
+        <MappingFragment StoreEntitySet="NGHE">
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="GHiChu" ColumnName="GHiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGHE_SI">
+      <EntityTypeMapping TypeName="MUSICModel1.NGHE_SI">
+        <MappingFragment StoreEntitySet="NGHE_SI">
+          <ScalarProperty Name="TenNS" ColumnName="TenNS" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="QueQuan" ColumnName="QueQuan" />
+          <ScalarProperty Name="NS_URL" ColumnName="NS_URL" />
+          <ScalarProperty Name="GT" ColumnName="GT" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="TheoDoi" ColumnName="TheoDoi" />
+          <ScalarProperty Name="NgheDanh" ColumnName="NgheDanh" />
+          <ScalarProperty Name="ThongTin" ColumnName="ThongTin" />
+          <ScalarProperty Name="URL_img" ColumnName="URL_img" />
+          <ScalarProperty Name="mans" ColumnName="mans" />
+          <ScalarProperty Name="MaNhom" ColumnName="MaNhom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHA_SAN_XUAT">
+      <EntityTypeMapping TypeName="MUSICModel1.NHA_SAN_XUAT">
+        <MappingFragment StoreEntitySet="NHA_SAN_XUAT">
+          <ScalarProperty Name="TenNSX" ColumnName="TenNSX" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="STK" ColumnName="STK" />
+          <ScalarProperty Name="mansx" ColumnName="mansx" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHAN_VIEN">
+      <EntityTypeMapping TypeName="MUSICModel1.NHAN_VIEN">
+        <MappingFragment StoreEntitySet="NHAN_VIEN">
+          <ScalarProperty Name="TenNV" ColumnName="TenNV" />
+          <ScalarProperty Name="GT" ColumnName="GT" />
+          <ScalarProperty Name="NS" ColumnName="NS" />
+          <ScalarProperty Name="DC" ColumnName="DC" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="STK" ColumnName="STK" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHOMs">
+      <EntityTypeMapping TypeName="MUSICModel1.NHOM">
+        <MappingFragment StoreEntitySet="NHOM">
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="NgayThanhLap" ColumnName="NgayThanhLap" />
+          <ScalarProperty Name="SoThanhVien" ColumnName="SoThanhVien" />
+          <ScalarProperty Name="URL_img" ColumnName="URL_img" />
+          <ScalarProperty Name="URL_link" ColumnName="URL_link" />
+          <ScalarProperty Name="MaNHOM" ColumnName="MaNHOM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHAN_QUYEN">
+      <EntityTypeMapping TypeName="MUSICModel1.PHAN_QUYEN">
+        <MappingFragment StoreEntitySet="PHAN_QUYEN">
+          <ScalarProperty Name="MaPQ" ColumnName="MaPQ" />
+          <ScalarProperty Name="TenQuyen" ColumnName="TenQuyen" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAN_PHAM">
+      <EntityTypeMapping TypeName="MUSICModel1.SAN_PHAM">
+        <MappingFragment StoreEntitySet="SAN_PHAM">
+          <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+          <ScalarProperty Name="SangTac" ColumnName="SangTac" />
+          <ScalarProperty Name="MaNSX" ColumnName="MaNSX" />
+          <ScalarProperty Name="SP_URL" ColumnName="SP_URL" />
+          <ScalarProperty Name="Theloai" ColumnName="Theloai" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="LuotNghe" ColumnName="LuotNghe" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="YeuThich" ColumnName="YeuThich" />
+          <ScalarProperty Name="KhongYeuThich" ColumnName="KhongYeuThich" />
+          <ScalarProperty Name="TGPhatHanh" ColumnName="TGPhatHanh" />
+          <ScalarProperty Name="masp" ColumnName="masp" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SU_KIEN">
+      <EntityTypeMapping TypeName="MUSICModel1.SU_KIEN">
+        <MappingFragment StoreEntitySet="SU_KIEN">
+          <ScalarProperty Name="TenSK" ColumnName="TenSK" />
+          <ScalarProperty Name="TGBatDau" ColumnName="TGBatDau" />
+          <ScalarProperty Name="DiaDiem" ColumnName="DiaDiem" />
+          <ScalarProperty Name="URL_img" ColumnName="URL_img" />
+          <ScalarProperty Name="URL_link" ColumnName="URL_link" />
+          <ScalarProperty Name="TGKetThuc" ColumnName="TGKetThuc" />
+          <ScalarProperty Name="maSK" ColumnName="maSK" />
+          <ScalarProperty Name="LuotTruyCap" ColumnName="LuotTruyCap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MUSICModel1.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAI_KHOAN">
+      <EntityTypeMapping TypeName="MUSICModel1.TAI_KHOAN">
+        <MappingFragment StoreEntitySet="TAI_KHOAN">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="MaPQ" ColumnName="MaPQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THEO_DOI">
+      <EntityTypeMapping TypeName="MUSICModel1.THEO_DOI">
+        <MappingFragment StoreEntitySet="THEO_DOI">
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="MaNS" ColumnName="MaNS" />
+          <ScalarProperty Name="TG" ColumnName="TG" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIN_MOI">
+      <EntityTypeMapping TypeName="MUSICModel1.TIN_MOI">
+        <MappingFragment StoreEntitySet="TIN_MOI">
+          <ScalarProperty Name="TenTM" ColumnName="TenTM" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="URL_img" ColumnName="URL_img" />
+          <ScalarProperty Name="URL_link" ColumnName="URL_link" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="LuotTruyCap" ColumnName="LuotTruyCap" />
+          <ScalarProperty Name="MaTM" ColumnName="MaTM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TK_AD">
+      <EntityTypeMapping TypeName="MUSICModel1.TK_AD">
+        <MappingFragment StoreEntitySet="TK_AD">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="MaAD" ColumnName="MaAD" />
+          <ScalarProperty Name="MapQ" ColumnName="MapQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TK_NV">
+      <EntityTypeMapping TypeName="MUSICModel1.TK_NV">
+        <MappingFragment StoreEntitySet="TK_NV">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+          <ScalarProperty Name="MapQ" ColumnName="MapQ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRINH_BAY">
+      <EntityTypeMapping TypeName="MUSICModel1.TRINH_BAY">
+        <MappingFragment StoreEntitySet="TRINH_BAY">
+          <ScalarProperty Name="MaNS" ColumnName="MaNS" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRUY_CAP_SK">
+      <EntityTypeMapping TypeName="MUSICModel1.TRUY_CAP_SK">
+        <MappingFragment StoreEntitySet="TRUY_CAP_SK">
+          <ScalarProperty Name="makh" ColumnName="makh" />
+          <ScalarProperty Name="maSK" ColumnName="maSK" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRUY_CAP_TM">
+      <EntityTypeMapping TypeName="MUSICModel1.TRUY_CAP_TM">
+        <MappingFragment StoreEntitySet="TRUY_CAP_TM">
+          <ScalarProperty Name="makh" ColumnName="makh" />
+          <ScalarProperty Name="maTM" ColumnName="maTM" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YEU_THICH">
+      <EntityTypeMapping TypeName="MUSICModel1.YEU_THICH">
+        <MappingFragment StoreEntitySet="YEU_THICH">
+          <ScalarProperty Name="makh" ColumnName="makh" />
+          <ScalarProperty Name="masp" ColumnName="masp" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="YeuThich" ColumnName="YeuThich" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP" FunctionName="MUSICModel1.Store.SP" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="MUSICModel1.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="MUSICModel1.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="MUSICModel1.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="MUSICModel1.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MUSICModel1.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="MUSICModel1.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MUSICModel1.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="MUSICModel1.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="MUSICModel1.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

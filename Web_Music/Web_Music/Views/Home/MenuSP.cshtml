@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Web_Music.Models.SAN_PHAM>
+
+@*@{
+        Layout = null;
+    }*@
+<div class="my-playlist">
+    <div class="playlist-head">
+        <h4>My Playlist</h4>
+        <a class="btn-hover">Show all</a>
+    </div>
+    <div class="playlist-list">
+        <div class="playlist playlist-list__title">
+            <p class="playlist__number">#</p>
+            <p class="playlist__title">TITLE</p>
+            <p class="playlist__artist">ARTIST</p>
+            <p class="playlist__time">TIME</p>
+        </div>
+      
+        @*<p>@ViewBag.i.SP.SP_URL</p>*@
+    </div>
+</div>
+
+
+
+
+@*<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>MenuSP</title>
+    </head>
+    <body>
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TenSP)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SangTac)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaNSX)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SP_URL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Theloai)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LuotNghe)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.GhiChu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.YeuThich)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.KhongYeuThich)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TGPhatHanh)
+                </th>
+                <th></th>
+            </tr>
+
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SangTac)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaNSX)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SP_URL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Theloai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TrangThai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LuotNghe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GhiChu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.YeuThich)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KhongYeuThich)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TGPhatHanh)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.masp }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.masp }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.masp })
+                </td>
+            </tr>
+        }
+
+        </table>
+    </body>
+    </html>*@

@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+@section Head{
+    <link rel="stylesheet" href="/Assets/css/event.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="~/Assets/css/styleMain.css" rel="stylesheet" />
+}
+@section Script{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+}
+
+
+<div id="main-content">
+    <header>
+        <nav class="main-content__header-nav">
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-right"></i>
+        </nav>
+        <div class="main-content__search-form">
+            <i class="fas fa-search search-btn"></i>
+            <input type="text" class="search-input" placeholder="Search for artist, songs.....">
+        </div>
+    </header>
+
+    <body>
+        <div class="box-scroll">
+            <div class="main-contain-event">
+                <h1 class="contain pt-5 header-content">WHAT'S YOUR EVENT?</h1>
+                <div class="row  ">
+                    <div class="col pr-0">
+                        <div class="item item-event">
+                            <img src="/Assets/img/event/party.jpg" class="float-start" alt="Paris"
+                                 width="100%" height="100%">
+                            <div class=" text-item h3">Parties & Special Occasions</div>
+
+                        </div>
+                    </div>
+                    <div class="col pr-0 pl-0">
+                        <div class="item item-event">
+                            <img src="/Assets/img/event/event.jpg" class="float-start" alt="Paris"
+                                 width="100%" height="100%">
+                            <div class=" text-item h3">Corporate Events</div>
+
+                        </div>
+                    </div>
+                    <div class="col pl-0">
+                        <div class="item item-event">
+                            <img src="/Assets/img/event/wedding.jpg" class="float-start" alt="Paris"
+                                 width="100%" height="100%">
+                            <div class=" text-item h3">Weddings</div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contain p-5 text-white rounde text-event ">
+                    <h2>We listen, offer expertise, create and perform.</h2>
+                    <h5 class="h5">
+                        “If you are looking for professionals who really understand your ideas,
+                        these guys are the ones! Goldsborough Hall, 26th April”
+                    </h5>
+
+
+                </div>
+
+            </div>
+            <div class="main-contain-event">
+                <h1 class="contain pt-5 header-content">SOME OF OUR GROUPS</h1>
+                <div class="contain pr-0 pl-0">
+                    <div class="row  ">
+                        <div class="col  pr-1">
+                            <div class="item">
+                                <img src="/Assets/img/event/Classical-scaled.jpg" class="float-start"
+                                     alt="Paris">
+                                <div class=" text-item h3">Trio-Vivo</div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col pl-1 ">
+                            <div class="item">
+                                <img src="/Assets/img/event/CHLBB-close-up-smoke-scaled.jpg"
+                                     class="float-center" alt="Paris" width="100%" height="100%">
+                                <div class=" text-item h3"> Chris Hilton's <br> Little Big Band</div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="row pt-2 ">
+                        <div class="col  pr-1  ">
+                            <div class=" item">
+                                <img src="/Assets/img/event/Trio-Vivo-scaled.jpg" class="float-start"
+                                     alt="Paris">
+
+                                <div class=" text-item h3">String Quartet</div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col pl-1 pr-1">
+                            <div class="item">
+                                <img src="/Assets/img/event/Jazz-Swing.jpg" class="float-center" alt="Paris"
+                                     width="100%" height="100%">
+                                <div class=" text-item h3">Jazz & Swing</div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col  pl-1 pr-1">
+                            <div class="item ">
+                                <img src="/Assets/img/event/dj.jpg" class="float-center" alt="Paris"
+                                     width="100%" height="100%">
+                                <div class=" text-item h3">DJ & Sax</div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col  pl-1">
+                            <div class="item">
+                                <img src="/Assets/img/event/LED-Dancefloor2.jpg" class="float-center"
+                                     alt="Paris" width="100%" height="100%">
+                                <div class=" text-item h3">Dancefloor</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" p-5  text-white rounde text-group">
+                    <h2>What makes a good party? Our music & lighting.</h2>
+
+                    <h5 class="h5">
+                        “If you are looking for professionals who really understand your ideas,
+                        these guys are the ones! Goldsborough Hall, 26th April”
+                    </h5>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </body>
+
+</div>

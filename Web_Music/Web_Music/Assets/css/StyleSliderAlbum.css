@@ -1,0 +1,311 @@
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slider .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    color: #EE82EE;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 48px;
+    text-align: center;
+}
+
+.numbertext {
+    color: #C71585;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nd1 {
+    color: #ba9bc9;
+    left: 30%;
+    top: 65%;
+    font-size: 70pt;
+    text-shadow: 5px 2px 4px grey;
+    font-family: Times, serif;
+
+}
+
+.nd2 {
+    font-size: 45px;
+    left: 50%;
+    top: 70%;
+    font-family: Times, serif;
+}
+
+.nb1 {
+    left: 20%;
+    top: 70%;
+    font-size: 70pt;
+    text-shadow: 5px 2px 4px grey;
+    font-weight: bold;
+    font-family: Times, serif;
+}
+
+.nb2 {
+    font-size: 50px;
+    left: 37%;
+    top: 75%;
+    font-family: Times, serif;
+}
+
+.na1 {
+    left: 25%;
+    font-size: 50pt;
+    top: 80%;
+    text-shadow: 5px 2px 4px grey;
+    font-family: Times, serif;
+}
+
+.na2 {
+    font-size: 25pt;
+    left: 49.5%;
+    top: 83%;
+    font-family: Times, serif;
+}
+
+.nc1 {
+    font-size: 80pt;
+    top: 80%;
+    left: 25%;
+    text-shadow: 5px 2px 4px grey;
+    font-family: Times, serif;
+}
+
+.nc2 {
+    font-size: 30pt;
+    top: 85%;
+    left: 38.5%;
+    font-family: Times, serif;
+}
+
+.album {
+    font-size: 25pt;
+    text-align: center;
+
+}
+
+.slider .dot {
+    position: relative;
+    height: 0px;
+    width: 0px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    display: flex;
+}
+
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+h1.albums {
+    margin-top: -20px;
+    padding-top: 24px;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+    background-color: #352f76;
+    background-image: linear-gradient(180deg, #352f76, #8683b4);
+}
+
+.album-item {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% / 3 - 12px);
+    margin: 4px;
+}
+
+.album img {
+    width: 50%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.album .album-item-content {
+    width: 50%;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.be {
+    font-family: Times, serif;
+    margin-top: 20pt;
+    color: #662d91;
+    font-size: 50px;
+}
+
+.be1 {
+    font-family: Times, serif;
+    color: #ba9bc9;
+    font-size: 25px;
+}
+
+.be2 {
+    font-family: Times, serif;
+    color: #662d91;
+    font-size: 13px;
+    margin-top: 10pt;
+}
+
+.kill {
+    font-family: Times, serif;
+    margin-top: 20pt;
+    color: #662d91;
+    font-size: 30px;
+}
+
+.kill1 {
+    font-family: Times, serif;
+    color: #ba9bc9;
+    font-size: 25px;
+}
+
+.kill2 {
+    font-family: Times, serif;
+    margin-top: 10pt;
+    color: #662d91;
+    font-size: 13px;
+}
+
+.des {
+    font-family: Times, serif;
+    margin-top: 20pt;
+    color: #662d91;
+    font-size: 30px;
+}
+
+.des1 {
+    font-family: Times, serif;
+    color: #ba9bc9;
+    font-size: 25px;
+}
+
+.des2 {
+    font-family: Times, serif;
+    margin-top: 15pt;
+    color: #662d91;
+    font-size: 13px;
+}
+
+.see {
+    font-family: Times, serif;
+    margin-top: 20pt;
+    color: #662d91;
+    font-size: 30px;
+}
+
+.see1 {
+    font-family: Times, serif;
+    color: #ba9bc9;
+    font-size: 25px;
+}
+
+.see2 {
+    font-family: Times, serif;
+    margin-top: 15pt;
+    color: #662d91;
+    font-size: 13px;
+}
+
+.chung {
+    font-family: Times, serif;
+    margin-top: 20pt;
+    color: #662d91;
+    font-size: 30px;
+}
+
+.chung1 {
+    font-family: Times, serif;
+    color: #ba9bc9;
+    font-size: 25px;
+}
+
+.chung2 {
+    font-family: Times, serif;
+    margin-top: 15pt;
+    color: #662d91;
+    font-size: 13px;
+}
+
+.adele {
+    font-family: Times, serif;
+    margin-top: 20pt;
+    color: #662d91;
+    font-size: 30px;
+}
+
+.adele1 {
+    font-family: Times, serif;
+    color: #ba9bc9;
+    font-size: 25px;
+}
+
+.adele2 {
+    font-family: Times, serif;
+    margin-top: 15pt;
+    color: #662d91;
+    font-size: 15px;
+}
+
+.albums {
+    font-family: Times, serif;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #342e75;
+    color: #ba9bc9;
+    font-size: 70px;
+    font-family: Times, serif;
+    font-weight: 500;
+}
+
+.music1 {
+    font-family: Times, serif;
+    color: #fff;
+    font-size: 20pt;
+    margin-top: 30px;
+    margin-left: 10%;
+}

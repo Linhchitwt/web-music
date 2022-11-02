@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MUSICModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ADMIN">
+    <Key>
+      <PropertyRef Name="MaAD" />
+    </Key>
+    <Property Name="TenAD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="STK" Type="Decimal" Precision="13" Scale="0" />
+    <Property Name="GT" Type="Boolean" />
+    <Property Name="NS" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="URL_img" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MaAD" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TK_AD" Relationship="Self.FK__TK_AD__MaAD__05D8E0BE" FromRole="ADMIN" ToRole="TK_AD" />
+  </EntityType>
+  <EntityType Name="ALbum">
+    <Key>
+      <PropertyRef Name="TenAlbum" />
+      <PropertyRef Name="MaSP" />
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="TenAlbum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaSP" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__ALbum__MaKH__4CA06362" FromRole="ALbum" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="SAN_PHAM" Relationship="Self.FK__ALbum__MaSP__4D94879B" FromRole="ALbum" ToRole="SAN_PHAM" />
+  </EntityType>
+  <EntityType Name="KHACH_HANG">
+    <Key>
+      <PropertyRef Name="makh" />
+    </Key>
+    <Property Name="TenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="STK" Type="Decimal" Precision="13" Scale="0" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="GT" Type="Boolean" />
+    <Property Name="CCCD" Type="Decimal" Precision="12" Scale="0" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="makh" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ALbums" Relationship="Self.FK__ALbum__MaKH__4CA06362" FromRole="KHACH_HANG" ToRole="ALbum" />
+    <NavigationProperty Name="NGHEs" Relationship="Self.FK__NGHE__MaKH__19DFD96B" FromRole="KHACH_HANG" ToRole="NGHE" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK__TAI_KHOAN__MaKH__52593CB8" FromRole="KHACH_HANG" ToRole="TAI_KHOAN" />
+    <NavigationProperty Name="THEO_DOI" Relationship="Self.FK__THEO_DOI__MaKH__76969D2E" FromRole="KHACH_HANG" ToRole="THEO_DOI" />
+    <NavigationProperty Name="TRUY_CAP_SK" Relationship="Self.FK__TRUY_CAP_S__makh__66603565" FromRole="KHACH_HANG" ToRole="TRUY_CAP_SK" />
+    <NavigationProperty Name="TRUY_CAP_TM" Relationship="Self.FK__TRUY_CAP_T__makh__6754599E" FromRole="KHACH_HANG" ToRole="TRUY_CAP_TM" />
+    <NavigationProperty Name="YEU_THICH" Relationship="Self.FK__YEU_THICH__makh__5DCAEF64" FromRole="KHACH_HANG" ToRole="YEU_THICH" />
+  </EntityType>
+  <EntityType Name="NGHE">
+    <Key>
+      <PropertyRef Name="MaSP" />
+      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="ThoiGian" />
+    </Key>
+    <Property Name="MaSP" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ThoiGian" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GHiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__NGHE__MaKH__19DFD96B" FromRole="NGHE" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="SAN_PHAM" Relationship="Self.FK__NGHE__MaSP__18EBB532" FromRole="NGHE" ToRole="SAN_PHAM" />
+  </EntityType>
+  <EntityType Name="NGHE_SI">
+    <Key>
+      <PropertyRef Name="mans" />
+    </Key>
+    <Property Name="TenNS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="QueQuan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NS_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="GT" Type="Boolean" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TheoDoi" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="NgheDanh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ThongTin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="URL_img" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="mans" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaNhom" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="NHOM" Relationship="Self.FK__NGHE_SI__MaNhom__151B244E" FromRole="NGHE_SI" ToRole="NHOM" />
+    <NavigationProperty Name="THEO_DOI" Relationship="Self.FK__THEO_DOI__MaNS__75A278F5" FromRole="NGHE_SI" ToRole="THEO_DOI" />
+    <NavigationProperty Name="TRINH_BAY" Relationship="Self.FK__TRINH_BAY__MaNS__0F624AF8" FromRole="NGHE_SI" ToRole="TRINH_BAY" />
+  </EntityType>
+  <EntityType Name="NHOM">
+    <Key>
+      <PropertyRef Name="MaNHOM" />
+    </Key>
+    <Property Name="TenNhom" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NgayThanhLap" Type="DateTime" Precision="0" />
+    <Property Name="SoThanhVien" Type="Int32" />
+    <Property Name="URL_img" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="URL_link" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MaNHOM" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="NGHE_SI" Relationship="Self.FK__NGHE_SI__MaNhom__151B244E" FromRole="NHOM" ToRole="NGHE_SI" />
+  </EntityType>
+  <EntityType Name="PHAN_QUYEN">
+    <Key>
+      <PropertyRef Name="MaPQ" />
+    </Key>
+    <Property Name="MaPQ" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TenQuyen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ghichu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK__TAI_KHOAN__MaPQ__0A9D95DB" FromRole="PHAN_QUYEN" ToRole="TAI_KHOAN" />
+    <NavigationProperty Name="TK_AD" Relationship="Self.FK__TK_AD__MapQ__0C85DE4D" FromRole="PHAN_QUYEN" ToRole="TK_AD" />
+  </EntityType>
+  <EntityType Name="SAN_PHAM">
+    <Key>
+      <PropertyRef Name="masp" />
+    </Key>
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SangTac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SP_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Theloai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="LuotNghe" Type="Double" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="YeuThich" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="KhongYeuThich" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="TGPhatHanh" Type="DateTime" Precision="3" />
+    <Property Name="masp" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ThoiGian" Type="Time" Precision="7" />
+    <NavigationProperty Name="ALbums" Relationship="Self.FK__ALbum__MaSP__4D94879B" FromRole="SAN_PHAM" ToRole="ALbum" />
+    <NavigationProperty Name="NGHEs" Relationship="Self.FK__NGHE__MaSP__18EBB532" FromRole="SAN_PHAM" ToRole="NGHE" />
+    <NavigationProperty Name="TRINH_BAY" Relationship="Self.FK__TRINH_BAY__MaSP__10566F31" FromRole="SAN_PHAM" ToRole="TRINH_BAY" />
+    <NavigationProperty Name="YEU_THICH" Relationship="Self.FK__YEU_THICH__masp__5FB337D6" FromRole="SAN_PHAM" ToRole="YEU_THICH" />
+  </EntityType>
+  <EntityType Name="SU_KIEN">
+    <Key>
+      <PropertyRef Name="maSK" />
+    </Key>
+    <Property Name="TenSK" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TGBatDau" Type="DateTime" Precision="3" />
+    <Property Name="DiaDiem" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="URL_img" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="URL_link" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TGKetThuc" Type="DateTime" Precision="3" />
+    <Property Name="maSK" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="LuotTruyCap" Type="Double" />
+    <NavigationProperty Name="TRUY_CAP_SK" Relationship="Self.FK__TRUY_CAP_S__maSK__693CA210" FromRole="SU_KIEN" ToRole="TRUY_CAP_SK" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TAI_KHOAN">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PassWord" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MaPQ" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__TAI_KHOAN__MaKH__52593CB8" FromRole="TAI_KHOAN" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="PHAN_QUYEN" Relationship="Self.FK__TAI_KHOAN__MaPQ__0A9D95DB" FromRole="TAI_KHOAN" ToRole="PHAN_QUYEN" />
+  </EntityType>
+  <EntityType Name="THEO_DOI">
+    <Key>
+      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="MaNS" />
+    </Key>
+    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaNS" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TG" Type="DateTime" Precision="3" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__THEO_DOI__MaKH__76969D2E" FromRole="THEO_DOI" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="NGHE_SI" Relationship="Self.FK__THEO_DOI__MaNS__75A278F5" FromRole="THEO_DOI" ToRole="NGHE_SI" />
+  </EntityType>
+  <EntityType Name="TIN_MOI">
+    <Key>
+      <PropertyRef Name="MaTM" />
+    </Key>
+    <Property Name="TenTM" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ThoiGian" Type="DateTime" Precision="3" />
+    <Property Name="URL_img" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="URL_link" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LuotTruyCap" Type="Double" />
+    <Property Name="MaTM" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TRUY_CAP_TM" Relationship="Self.FK__TRUY_CAP_T__maTM__68487DD7" FromRole="TIN_MOI" ToRole="TRUY_CAP_TM" />
+  </EntityType>
+  <EntityType Name="TK_AD">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PassWord" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="MaAD" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MapQ" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="ADMIN" Relationship="Self.FK__TK_AD__MaAD__05D8E0BE" FromRole="TK_AD" ToRole="ADMIN" />
+    <NavigationProperty Name="PHAN_QUYEN" Relationship="Self.FK__TK_AD__MapQ__0C85DE4D" FromRole="TK_AD" ToRole="PHAN_QUYEN" />
+  </EntityType>
+  <EntityType Name="TRINH_BAY">
+    <Key>
+      <PropertyRef Name="MaNS" />
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaNS" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaSP" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NGHE_SI" Relationship="Self.FK__TRINH_BAY__MaNS__0F624AF8" FromRole="TRINH_BAY" ToRole="NGHE_SI" />
+    <NavigationProperty Name="SAN_PHAM" Relationship="Self.FK__TRINH_BAY__MaSP__10566F31" FromRole="TRINH_BAY" ToRole="SAN_PHAM" />
+  </EntityType>
+  <EntityType Name="TRUY_CAP_SK">
+    <Key>
+      <PropertyRef Name="makh" />
+      <PropertyRef Name="maSK" />
+      <PropertyRef Name="ThoiGian" />
+    </Key>
+    <Property Name="makh" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="maSK" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ThoiGian" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__TRUY_CAP_S__makh__66603565" FromRole="TRUY_CAP_SK" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="SU_KIEN" Relationship="Self.FK__TRUY_CAP_S__maSK__693CA210" FromRole="TRUY_CAP_SK" ToRole="SU_KIEN" />
+  </EntityType>
+  <EntityType Name="TRUY_CAP_TM">
+    <Key>
+      <PropertyRef Name="makh" />
+      <PropertyRef Name="maTM" />
+      <PropertyRef Name="ThoiGian" />
+    </Key>
+    <Property Name="makh" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="maTM" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ThoiGian" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__TRUY_CAP_T__makh__6754599E" FromRole="TRUY_CAP_TM" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="TIN_MOI" Relationship="Self.FK__TRUY_CAP_T__maTM__68487DD7" FromRole="TRUY_CAP_TM" ToRole="TIN_MOI" />
+  </EntityType>
+  <EntityType Name="YEU_THICH">
+    <Key>
+      <PropertyRef Name="makh" />
+      <PropertyRef Name="masp" />
+    </Key>
+    <Property Name="makh" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="masp" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ThoiGian" Type="DateTime" Precision="3" />
+    <Property Name="YeuThich" Type="Boolean" />
+    <NavigationProperty Name="KHACH_HANG" Relationship="Self.FK__YEU_THICH__makh__5DCAEF64" FromRole="YEU_THICH" ToRole="KHACH_HANG" />
+    <NavigationProperty Name="SAN_PHAM" Relationship="Self.FK__YEU_THICH__masp__5FB337D6" FromRole="YEU_THICH" ToRole="SAN_PHAM" />
+  </EntityType>
+  <Association Name="FK__TK_AD__MaAD__05D8E0BE">
+    <End Role="ADMIN" Type="Self.ADMIN" Multiplicity="0..1" />
+    <End Role="TK_AD" Type="Self.TK_AD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADMIN">
+        <PropertyRef Name="MaAD" />
+      </Principal>
+      <Dependent Role="TK_AD">
+        <PropertyRef Name="MaAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ALbum__MaKH__4CA06362">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="1" />
+    <End Role="ALbum" Type="Self.ALbum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="ALbum">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ALbum__MaSP__4D94879B">
+    <End Role="SAN_PHAM" Type="Self.SAN_PHAM" Multiplicity="1" />
+    <End Role="ALbum" Type="Self.ALbum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SAN_PHAM">
+        <PropertyRef Name="masp" />
+      </Principal>
+      <Dependent Role="ALbum">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGHE__MaKH__19DFD96B">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="1" />
+    <End Role="NGHE" Type="Self.NGHE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="NGHE">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TAI_KHOAN__MaKH__52593CB8">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="0..1" />
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="TAI_KHOAN">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__THEO_DOI__MaKH__76969D2E">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="1" />
+    <End Role="THEO_DOI" Type="Self.THEO_DOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="THEO_DOI">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRUY_CAP_S__makh__66603565">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="1" />
+    <End Role="TRUY_CAP_SK" Type="Self.TRUY_CAP_SK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="TRUY_CAP_SK">
+        <PropertyRef Name="makh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRUY_CAP_T__makh__6754599E">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="1" />
+    <End Role="TRUY_CAP_TM" Type="Self.TRUY_CAP_TM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="TRUY_CAP_TM">
+        <PropertyRef Name="makh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__YEU_THICH__makh__5DCAEF64">
+    <End Role="KHACH_HANG" Type="Self.KHACH_HANG" Multiplicity="1" />
+    <End Role="YEU_THICH" Type="Self.YEU_THICH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACH_HANG">
+        <PropertyRef Name="makh" />
+      </Principal>
+      <Dependent Role="YEU_THICH">
+        <PropertyRef Name="makh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGHE__MaSP__18EBB532">
+    <End Role="SAN_PHAM" Type="Self.SAN_PHAM" Multiplicity="1" />
+    <End Role="NGHE" Type="Self.NGHE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SAN_PHAM">
+        <PropertyRef Name="masp" />
+      </Principal>
+      <Dependent Role="NGHE">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGHE_SI__MaNhom__151B244E">
+    <End Role="NHOM" Type="Self.NHOM" Multiplicity="0..1" />
+    <End Role="NGHE_SI" Type="Self.NGHE_SI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOM">
+        <PropertyRef Name="MaNHOM" />
+      </Principal>
+      <Dependent Role="NGHE_SI">
+        <PropertyRef Name="MaNhom" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__THEO_DOI__MaNS__75A278F5">
+    <End Role="NGHE_SI" Type="Self.NGHE_SI" Multiplicity="1" />
+    <End Role="THEO_DOI" Type="Self.THEO_DOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGHE_SI">
+        <PropertyRef Name="mans" />
+      </Principal>
+      <Dependent Role="THEO_DOI">
+        <PropertyRef Name="MaNS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRINH_BAY__MaNS__0F624AF8">
+    <End Role="NGHE_SI" Type="Self.NGHE_SI" Multiplicity="1" />
+    <End Role="TRINH_BAY" Type="Self.TRINH_BAY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGHE_SI">
+        <PropertyRef Name="mans" />
+      </Principal>
+      <Dependent Role="TRINH_BAY">
+        <PropertyRef Name="MaNS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TAI_KHOAN__MaPQ__0A9D95DB">
+    <End Role="PHAN_QUYEN" Type="Self.PHAN_QUYEN" Multiplicity="0..1" />
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHAN_QUYEN">
+        <PropertyRef Name="MaPQ" />
+      </Principal>
+      <Dependent Role="TAI_KHOAN">
+        <PropertyRef Name="MaPQ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TK_AD__MapQ__0C85DE4D">
+    <End Role="PHAN_QUYEN" Type="Self.PHAN_QUYEN" Multiplicity="0..1" />
+    <End Role="TK_AD" Type="Self.TK_AD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHAN_QUYEN">
+        <PropertyRef Name="MaPQ" />
+      </Principal>
+      <Dependent Role="TK_AD">
+        <PropertyRef Name="MapQ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRINH_BAY__MaSP__10566F31">
+    <End Role="SAN_PHAM" Type="Self.SAN_PHAM" Multiplicity="1" />
+    <End Role="TRINH_BAY" Type="Self.TRINH_BAY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SAN_PHAM">
+        <PropertyRef Name="masp" />
+      </Principal>
+      <Dependent Role="TRINH_BAY">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__YEU_THICH__masp__5FB337D6">
+    <End Role="SAN_PHAM" Type="Self.SAN_PHAM" Multiplicity="1" />
+    <End Role="YEU_THICH" Type="Self.YEU_THICH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SAN_PHAM">
+        <PropertyRef Name="masp" />
+      </Principal>
+      <Dependent Role="YEU_THICH">
+        <PropertyRef Name="masp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRUY_CAP_S__maSK__693CA210">
+    <End Role="SU_KIEN" Type="Self.SU_KIEN" Multiplicity="1" />
+    <End Role="TRUY_CAP_SK" Type="Self.TRUY_CAP_SK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SU_KIEN">
+        <PropertyRef Name="maSK" />
+      </Principal>
+      <Dependent Role="TRUY_CAP_SK">
+        <PropertyRef Name="maSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TRUY_CAP_T__maTM__68487DD7">
+    <End Role="TIN_MOI" Type="Self.TIN_MOI" Multiplicity="1" />
+    <End Role="TRUY_CAP_TM" Type="Self.TRUY_CAP_TM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIN_MOI">
+        <PropertyRef Name="MaTM" />
+      </Principal>
+      <Dependent Role="TRUY_CAP_TM">
+        <PropertyRef Name="maTM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyDBconect" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ADMINs" EntityType="Self.ADMIN" />
+    <EntitySet Name="ALbums" EntityType="Self.ALbum" />
+    <EntitySet Name="KHACH_HANG" EntityType="Self.KHACH_HANG" />
+    <EntitySet Name="NGHEs" EntityType="Self.NGHE" />
+    <EntitySet Name="NGHE_SI" EntityType="Self.NGHE_SI" />
+    <EntitySet Name="NHOMs" EntityType="Self.NHOM" />
+    <EntitySet Name="PHAN_QUYEN" EntityType="Self.PHAN_QUYEN" />
+    <EntitySet Name="SAN_PHAM" EntityType="Self.SAN_PHAM" />
+    <EntitySet Name="SU_KIEN" EntityType="Self.SU_KIEN" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TAI_KHOAN" EntityType="Self.TAI_KHOAN" />
+    <EntitySet Name="THEO_DOI" EntityType="Self.THEO_DOI" />
+    <EntitySet Name="TIN_MOI" EntityType="Self.TIN_MOI" />
+    <EntitySet Name="TK_AD" EntityType="Self.TK_AD" />
+    <EntitySet Name="TRINH_BAY" EntityType="Self.TRINH_BAY" />
+    <EntitySet Name="TRUY_CAP_SK" EntityType="Self.TRUY_CAP_SK" />
+    <EntitySet Name="TRUY_CAP_TM" EntityType="Self.TRUY_CAP_TM" />
+    <EntitySet Name="YEU_THICH" EntityType="Self.YEU_THICH" />
+    <AssociationSet Name="FK__TK_AD__MaAD__05D8E0BE" Association="Self.FK__TK_AD__MaAD__05D8E0BE">
+      <End Role="ADMIN" EntitySet="ADMINs" />
+      <End Role="TK_AD" EntitySet="TK_AD" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ALbum__MaKH__4CA06362" Association="Self.FK__ALbum__MaKH__4CA06362">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="ALbum" EntitySet="ALbums" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ALbum__MaSP__4D94879B" Association="Self.FK__ALbum__MaSP__4D94879B">
+      <End Role="SAN_PHAM" EntitySet="SAN_PHAM" />
+      <End Role="ALbum" EntitySet="ALbums" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGHE__MaKH__19DFD96B" Association="Self.FK__NGHE__MaKH__19DFD96B">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="NGHE" EntitySet="NGHEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TAI_KHOAN__MaKH__52593CB8" Association="Self.FK__TAI_KHOAN__MaKH__52593CB8">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__THEO_DOI__MaKH__76969D2E" Association="Self.FK__THEO_DOI__MaKH__76969D2E">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="THEO_DOI" EntitySet="THEO_DOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRUY_CAP_S__makh__66603565" Association="Self.FK__TRUY_CAP_S__makh__66603565">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="TRUY_CAP_SK" EntitySet="TRUY_CAP_SK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRUY_CAP_T__makh__6754599E" Association="Self.FK__TRUY_CAP_T__makh__6754599E">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="TRUY_CAP_TM" EntitySet="TRUY_CAP_TM" />
+    </AssociationSet>
+    <AssociationSet Name="FK__YEU_THICH__makh__5DCAEF64" Association="Self.FK__YEU_THICH__makh__5DCAEF64">
+      <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+      <End Role="YEU_THICH" EntitySet="YEU_THICH" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGHE__MaSP__18EBB532" Association="Self.FK__NGHE__MaSP__18EBB532">
+      <End Role="SAN_PHAM" EntitySet="SAN_PHAM" />
+      <End Role="NGHE" EntitySet="NGHEs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGHE_SI__MaNhom__151B244E" Association="Self.FK__NGHE_SI__MaNhom__151B244E">
+      <End Role="NHOM" EntitySet="NHOMs" />
+      <End Role="NGHE_SI" EntitySet="NGHE_SI" />
+    </AssociationSet>
+    <AssociationSet Name="FK__THEO_DOI__MaNS__75A278F5" Association="Self.FK__THEO_DOI__MaNS__75A278F5">
+      <End Role="NGHE_SI" EntitySet="NGHE_SI" />
+      <End Role="THEO_DOI" EntitySet="THEO_DOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRINH_BAY__MaNS__0F624AF8" Association="Self.FK__TRINH_BAY__MaNS__0F624AF8">
+      <End Role="NGHE_SI" EntitySet="NGHE_SI" />
+      <End Role="TRINH_BAY" EntitySet="TRINH_BAY" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TAI_KHOAN__MaPQ__0A9D95DB" Association="Self.FK__TAI_KHOAN__MaPQ__0A9D95DB">
+      <End Role="PHAN_QUYEN" EntitySet="PHAN_QUYEN" />
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TK_AD__MapQ__0C85DE4D" Association="Self.FK__TK_AD__MapQ__0C85DE4D">
+      <End Role="PHAN_QUYEN" EntitySet="PHAN_QUYEN" />
+      <End Role="TK_AD" EntitySet="TK_AD" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRINH_BAY__MaSP__10566F31" Association="Self.FK__TRINH_BAY__MaSP__10566F31">
+      <End Role="SAN_PHAM" EntitySet="SAN_PHAM" />
+      <End Role="TRINH_BAY" EntitySet="TRINH_BAY" />
+    </AssociationSet>
+    <AssociationSet Name="FK__YEU_THICH__masp__5FB337D6" Association="Self.FK__YEU_THICH__masp__5FB337D6">
+      <End Role="SAN_PHAM" EntitySet="SAN_PHAM" />
+      <End Role="YEU_THICH" EntitySet="YEU_THICH" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRUY_CAP_S__maSK__693CA210" Association="Self.FK__TRUY_CAP_S__maSK__693CA210">
+      <End Role="SU_KIEN" EntitySet="SU_KIEN" />
+      <End Role="TRUY_CAP_SK" EntitySet="TRUY_CAP_SK" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TRUY_CAP_T__maTM__68487DD7" Association="Self.FK__TRUY_CAP_T__maTM__68487DD7">
+      <End Role="TIN_MOI" EntitySet="TIN_MOI" />
+      <End Role="TRUY_CAP_TM" EntitySet="TRUY_CAP_TM" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

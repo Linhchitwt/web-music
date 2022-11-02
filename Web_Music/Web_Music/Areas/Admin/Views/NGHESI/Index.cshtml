@@ -1,0 +1,233 @@
+﻿@model IEnumerable<Web_Music.Models.NGHE_SI>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@*@for(int i=0;i<ViewBag.size;i++)
+{
+    <p>@ViewBag.list[i].mans</p>
+    <div class="album-item">
+        <img src="@Url.Content(ViewBag.list[i].URL_img)" style="height:200px;width:200px;margin:10px;"  />
+        <div class="album-item-content" style="background-color:  #d8c0f9;">
+            <div class="adele">21</div>
+            <div class="adele1">item.</div>
+            <p class="kill2">
+                A sleeper hit, 21 defied the modest
+                commercial expectations of Adele's
+                independent record label XL.
+            </p>
+        </div>
+    </div>
+}*@
+<div class="card-body">
+    <h4 class="card-title">Striped Table</h4>
+    <p class="card-description">
+        Add class <code>.table-striped</code>
+    </p>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>ID</th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Date of Birth
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        Sex
+                    </th>
+                    <th>
+                        Stsge Name
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        @*<td><img src="@Url.Content(modelItem=>item.URL_img)" style="height:200px;width:200px;margin:10px;" /></td>*@
+
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.mans)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenNS)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NgaySinh)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.QueQuan)
+                        </td>
+
+
+                        <td>
+                            @item.GT
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NgheDanh)
+                        </td>
+
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.mans }) |
+                            @Html.ActionLink("Detail", "Detail", new { id = item.mans }) |
+                            (@Html.ActionLink("Delete", "Delete", new { id = item.mans }) 
+                            <a href="#" onclick="if (confirm('Ban co chac chan muon xoa khong') == true) { location.href='~/Admin/NGHESI/Delete?id=@item.mans' }">delete</a>
+                        </td>
+                    </tr>
+                }
+                @*<tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face1.jpg" alt="image">
+                        </td>
+                        <td>
+                            Herman Beck
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $ 77.99
+                        </td>
+                        <td>
+                            May 15, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face2.jpg" alt="image">
+                        </td>
+                        <td>
+                            Messsy Adam
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $245.30
+                        </td>
+                        <td>
+                            July 1, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face3.jpg" alt="image">
+                        </td>
+                        <td>
+                            John Richards
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $138.00
+                        </td>
+                        <td>
+                            Apr 12, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face4.jpg" alt="image">
+                        </td>
+                        <td>
+                            Peter Meggik
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $ 77.99
+                        </td>
+                        <td>
+                            May 15, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face5.jpg" alt="image">
+                        </td>
+                        <td>
+                            Edward
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $ 160.25
+                        </td>
+                        <td>
+                            May 03, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face6.jpg" alt="image">
+                        </td>
+                        <td>
+                            John Doe
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $ 123.21
+                        </td>
+                        <td>
+                            April 05, 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face7.jpg" alt="image">
+                        </td>
+                        <td>
+                            Henry Tom
+                        </td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td>
+                            $ 150.00
+                        </td>
+                        <td>
+                            June 16, 2015
+                        </td>
+                    </tr>*@
+            </tbody>
+        </table>
+    </div>
+</div>
+

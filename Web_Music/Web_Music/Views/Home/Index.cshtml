@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+@section Head{
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+    <link href="~/Assets/css/responsiveMain.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="~/Assets/css/styleMain.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+          rel="stylesheet">
+}
+@section Script{
+    <script>
+        const musics = [];
+        //musics.push({
+        //    id: 0,
+        //    number: '01',
+        //    file: 'assests_mp3_ntt.mp3',
+        //    title: 'Ngày tận thế',
+        //    artist: 'Tóc Tiên',
+        //    time: '3:52',
+        //    active: false,
+        //})
+
+
+          musics.push({
+                id:@ViewBag.list[0].stt,
+                number:"@ViewBag.list[0].number",
+                file:"@ViewBag.list[0].SP.SP_URL",
+                title:"@ViewBag.list[0].SP.TenSP",
+                artist:"@ViewBag.list[0].TrinhBay",
+                time:"@ViewBag.list[0].Time",
+                active:false,
+          })
+         musics.push({
+                id:@ViewBag.list[1].stt,
+                number:"@ViewBag.list[1].number",
+                file:"@ViewBag.list[1].SP.SP_URL",
+                title:"@ViewBag.list[1].SP.TenSP",
+                artist:"@ViewBag.list[1].TrinhBay",
+                time:"@ViewBag.list[1].Time",
+                active:false,
+         })
+        musics.push({
+                id:@ViewBag.list[2].stt,
+                number:"@ViewBag.list[2].number",
+                file:"@ViewBag.list[2].SP.SP_URL",
+                title:"@ViewBag.list[2].SP.TenSP",
+                artist:"@ViewBag.list[2].TrinhBay",
+                time:"@ViewBag.list[2].Time",
+                active:false,
+          })
+        @*musics.push(@ViewBag.list)*@
+
+    </script>
+    <script src="/Assets/javaScript/main.js"></script>
+}
+<div id="main-content">
+    <header>
+        <nav class="main-content__header-nav">
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-right"></i>
+        </nav>
+        <div class="main-content__search-form">
+            <i class="fas fa-search search-btn"></i>
+            <input type="text" class="search-input" placeholder="Search for artist, songs.....">
+        </div>
+    </header>
+
+    <p class="main-content__des">
+        What's hot<span>
+            <img src="/Assets/img/imgMain/fire.png" alt="" width="16px"
+                 height="17px">
+        </span>
+    </p>
+    <div class="main-content__trend">
+
+        <div class="main-content__trend-title">Trending</div>
+        <div class="main-content__trend-more btn-hover">
+            More
+            <span><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </div>
+    <div class="main-content__banner">
+        <p class="main-content__banner-artist">Artist</p>
+        <h4 class="main-content__banner-des">On Top Of The World</h4>
+        <div class="main-content__banner-btn">
+            <button class="play-btn">PLAY</button>
+            <button class="follow-btn">FOLLOW</button>
+        </div>
+        <span class="main-content__view">
+            Monthly listeners
+            <p>50.000</p>
+        </span>
+    </div>
+    @Html.Action("MenuSP", "Home", null)
+    <div class="play-song">
+        <div class="play-control">
+            <div class="play-control__act">
+                <i class="far fa-heart" id='heart'></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+            <div class="play-control__main">
+                <i class="fas fa-redo-alt play-repeat"></i>
+                <i class="fas fa-fast-backward play-backward main-icon"></i>
+                <!-- <i class="fas fa-pause-circle pause-icon main-icon main-icon--big"></i> -->
+                <span class="play-inner">
+                    <i class="fas fa-play-circle play-icon main-icon main-icon--big"></i>
+                </span>
+                <i class="fas fa-fast-forward play-forward main-icon"></i>
+                <i class="fas fa-random shuffle-song"></i>
+            </div>
+            <div class="play-control__volume">
+                <i class="fas fa-volume-mute"></i>
+                <input type="range" id="volume" class="volume" value="1" min="0" max="1" step="0.1">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+        <div class="play-seekbar">
+            <div class="timer__left">0:00</div>
+            <input type="range" name="range" id="range" class="range" />
+            <audio src="/Assets/mp3/assests_mp3_ntt.mp3" id="song"></audio>
+            <div class="timer__right">3.00</div>
+        </div>
+    </div>
+</div>
+
+<!--
+    ====================SIDE-BAR=========================
+-->
+<div id="sidebar">
+    <div class="sidebar__shortcuts">
+        <p class="sidebar__shortcuts-title">
+            Shortcuts
+        </p>
+        <div class="sidebar__shortcuts-items">
+            <span class="sidebar__shortcuts-item">
+                Chill
+                <img src="/Assets/img/imgMain/snow.png" alt="">
+            </span>
+            <span class="sidebar__shortcuts-item">
+                Hot
+                <img src="/Assets/img/imgMain/star.png" alt="">
+            </span>
+            <span class="sidebar__shortcuts-item">
+                Piano instrumental
+                <img src="/Assets/img/imgMain/piano.png" alt="">
+            </span>
+            <span class="sidebar__shortcuts-item">
+                Jazz
+                <img src="/Assets/img/imgMain/jazz.png" alt="">
+            </span>
+            <span class="/Assets/sidebar__shortcuts-item">
+                Acoustic
+                <img src="/Assets/img/imgMain/ghitar.png" alt="">
+            </span>
+        </div>
+    </div>
+
+    <div class="sidebar__favorite">
+        <p class="sidebar__favorite-title">Favorite Artists</p>
+            ARTIST 1    
+        <div class="sidebar__favorite-list">
+            <div class="artist-info__avt">
+                <img src="/Assets/img/imgMain/tóc-tiên.jpg" alt="">
+            </div>
+            <div class="artist-info">
+                <h4 class="artist-info__name">Tóc Tiên</h4>
+                <p class="artist-info__song">6 songs in library</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+
+            ARTIST 2    
+        <div class="sidebar__favorite-list">
+            <div class="artist-info__avt">
+                <img src="/Assets/img/imgMain/min.jpg" alt="">
+            </div>
+            <div class="artist-info">
+                <h4 class="artist-info__name">Min</h4>
+                <p class="artist-info__song">5 songs in library</p>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+    </div>
+
+    <div class="sidebar__suggest-album">
+        <div class="suggest-album">
+            <div class="suggest-album__img-container">
+                <img src="/Assets/img/imgMain/ngô-lan-hương.jpg" alt="">
+            </div>
+            <div class="suggest-album__content">
+                <div class="suggest-album__info">
+                    <h4>Anh muốn đưa em về không</h4>
+                    <p>Ngô Lan Hương</p>
+                </div>
+                <i class="far fa-plus-square"></i>
+            </div>
+        </div>
+    </div>
+</div>
+

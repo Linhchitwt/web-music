@@ -1,0 +1,75 @@
+﻿@model Web_Music.Models.NGHE_SI
+
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>NGHE_SI</h4>
+    <hr />
+  
+    <table class="table">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Date of Birth
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                Sex
+            </th>
+            <th>
+                Stage Name
+            </th>
+
+
+            <th>@ViewBag.qs</th>
+        </tr>
+
+        @foreach (var item in ViewBag.NgheSi)
+        {
+            <img src = `${@item.URL_img}` />
+            <tr>
+
+
+
+
+                <td>
+                     @item.TenNS
+                </td>
+                <td>
+                    @item.NgaySinh
+                </td>
+                <td>
+                    @item.QueQuan
+                </td>
+
+
+                <td>
+                    @item.GT
+                </td>
+
+                <td>
+                    @item.NgheDanh
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.mans }) |
+                 
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>

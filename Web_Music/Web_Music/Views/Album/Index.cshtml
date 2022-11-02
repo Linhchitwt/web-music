@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<div id="main-content">
+    <header>
+        <nav class="main-content__header-nav">
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-right"></i>
+        </nav>
+        <div class="main-content__search-form">
+            <i class="fas fa-search search-btn"></i>
+            <input type="text" class="search-input" placeholder="Search for artist, songs.....">
+        </div>
+    </header>
+
+    <body>
+        <div class="box-scroll">
+            <h1 class="contain pt-5 header-content">Albums</h1>
+            <div class="contant ">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <span class="want-play">
+                                <i class="fa-regular fa-circle-play "></i>
+                            </span>
+                            <img src="/Giới thiệu/Artist/download.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Chúng ta </h3>
+                                <h4 class="card-text">Sơn Tùng MTP </h4>
+                                <h5>1 day ago  </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <span class="want-play">
+                                <i class="fa-regular fa-circle-play "></i>
+                            </span>
+                            <img src="/Giới thiệu/Artist/charlie-01.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">why ? </h3>
+                                <h4 class="card-text">charlie </h4>
+                                <h5>1 month ago  </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                        <div class="card">
+                            <span class="want-play">
+                                <i class="fa-regular fa-circle-play "></i>
+                            </span>
+
+                            <img src="/Giới thiệu/Artist/taylor switf.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Everymore </h3>
+                                <h4 class="card-text">taylor Switf </h4>
+                                <h5>2 days ago  </h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <span class="want-play">
+                                <i class="fa-regular fa-circle-play "></i>
+                            </span>
+                            <img src="/Giới thiệu/Artist/tóc-tiên.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">My turn</h3>
+                                <h4 class="card-text">Tóc Tiên  </h4>
+                                <h5>1 year ago  </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footers">
+                <div class="play-song">
+                    <div class="play-control">
+                        <div class="play-control__act">
+                            <i class="far fa-heart" id='heart'></i>
+                            <i class="fas fa-music"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <div class="play-control__main">
+                            <i class="fas fa-redo-alt play-repeat"></i>
+                            <i class="fas fa-fast-backward play-backward main-icon"></i>
+                            <!-- <i class="fas fa-pause-circle pause-icon main-icon main-icon--big"></i> -->
+                            <span class="play-inner">
+                                <i class="fas fa-play-circle play-icon main-icon main-icon--big"></i>
+                            </span>
+                            <i class="fas fa-fast-forward play-forward main-icon"></i>
+                            <i class="fas fa-random shuffle-song"></i>
+                        </div>
+                        <div class="play-control__volume">
+                            <i class="fas fa-volume-mute"></i>
+                            <input type="range" id="volume" class="volume" value="1" min="0" max="1" step="0.1">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                    </div>
+                    <div class="play-seekbar">
+                        <div class="timer__left">0:00</div>
+                        <input type="range" name="range" id="range" class="range" />
+                        <audio src="/mp3/assests_mp3_ntt.mp3" id="song"></audio>
+                        <div class="timer__right">3.00</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    </body>
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+
+@*<link href="~/Assets/css/responsiveMain.css" rel="stylesheet" />*@
+    @*<link rel="stylesheet" href="/Assets/img/imgMain/">*@
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/Assets/css/styleMain.css">
+    <link rel="stylesheet" href="/Assets/css/responsiveMain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+          rel="stylesheet">
+    <title>CNTT2 MUSIC</title>
+    @RenderSection("Head", required: false)
+</head>
+
+<body>
+    <div id="main">
+        <div id="container">
+            <!--
+        =======================NAVBAR==========================
+    -->
+            <div id="navbar">
+                <div class="navbar-container">
+                    <header>
+                        <span class="check">
+                            <span class="ball"></span>
+                        </span>
+                        <i class="fas fa-stream js-hide-navbar"></i>
+                    </header>
+                    <div class="logo">
+                        <i class="navbar__logo fab fa-forumbee"></i>
+                        <span class="navbar__primary-text">CNTT2</span><span>Music</span>
+                    </div>
+                    <div class="navbar-content">
+                        <nav>
+                            <li class="navbar-content__icon btn-home">
+                                <a href="~/Home/Index"><i class="fas fa-home"></i>Home</a>
+                            </li>
+                            <li class="navbar-content__icon btn-trend">
+                                <a href="~/Trend/Index"><i class="fas fa-chart-line"></i>Trend</a>
+                            </li>
+                            <li class="navbar-content__icon btn-feed">
+                                <a href="~/Feed/Index"><i class="fas fa-compass"></i>Feed</a>
+                            </li>
+                        </nav>
+
+                        <nav>
+                            <p class=" navbar-content__title">Discover</p>
+                            <ul>
+                                <li class="navbar-content__icon btn-new">
+                                    <a href="~/Notable/Index"><i class="far fa-newspaper"></i>New and Notable</a>
+                                </li>
+                                <li class="navbar-content__icon btn-Calendar">
+                                    <a href="~/Calendar/Index"><i class="fas fa-calendar-alt"></i>Release Calendar</a>
+                                </li>
+                                <li class="navbar-content__icon btn-event">
+                                    <a href="~/Event/Index"><i class="fas fa-ticket-alt"></i>Events</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav>
+                            <p class=" navbar-content__title">Your Collection</p>
+                            <ul>
+                                <li class="navbar-content__icon btn-favorite">
+                                    <a href="#"><i class="fas fa-heart"></i>Favorite Songs</a>
+                                </li>
+                                <li class="navbar-content__icon btn-artist">
+                                    <a href="#"><i class="fas fa-users"></i>Artist</a>
+                                </li>
+                                <li class="navbar-content__icon btn-album">
+                                    <a href="#"><i class="fas fa-star"></i>Albums</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="navbar-user">
+                    <div class="navbar-user__container">
+                        <div class="user-avt">
+                            <img src="~/Assets/img/imgMain/snow.png" />
+                        </div>
+                        <div class="user-name">Linh Chi</div>
+                        <a href=""><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+        ====================MAIN_CONTENT=====================
+    -->
+
+            @RenderBody()
+        </div>
+        
+    </div>
+    @RenderSection("Script", required:false);
+    @*<script src="/Assets/javaScript/main.js"></script>*@
+</body>
+
+</html>
+
+
