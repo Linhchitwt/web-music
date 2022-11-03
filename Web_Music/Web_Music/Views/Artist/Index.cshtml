@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/MyLayout.cshtml";
 }
@@ -27,22 +26,22 @@
                         <div class="col">
                             <h4 class="contain nameArtist"> Charlie </h4>
 
-                            <img src="/Giới thiệu/Artist/charlie-01.png" alt="">
+                            <img src="/intro/Artist/charlie-01.png" alt="">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist">Sơn Tùng </h4>
 
-                            <img src="/Giới thiệu/Artist/download.jpg">
+                            <img src="/intro/Artist/download.jpg">
                         </div>
                         <div class="col">
-                            <h4 class="contain nameArtist">Taylor  </h4>
+                            <h4 class="contain nameArtist">Taylor </h4>
 
-                            <img src="/Giới thiệu/Artist/taylor switf.png">
+                            <img src="/intro/Artist/taylor switf.png">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist">Tóc Tiên </h4>
 
-                            <img src="/Giới thiệu/Artist/tóc-tiên.jpg">
+                            <img src="/intro/Artist/tóc-tiên.jpg">
                         </div>
                     </div>
                 </div>
@@ -51,23 +50,23 @@
 
                         <div class="col">
                             <h4 class="contain nameArtist">Sơn Tùng </h4>
-                            <img src="/Giới thiệu/Artist/download.jpg">
+                            <img src="/intro/Artist/download.jpg">
 
                         </div>
                         <div class="col">
-                            <h4 class="contain nameArtist">Taylor  </h4>
+                            <h4 class="contain nameArtist">Taylor </h4>
 
-                            <img src="/Giới thiệu/Artist/taylor switf.png">
+                            <img src="/intro/Artist/taylor switf.png">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist">Tóc Tiên </h4>
 
-                            <img src="/Giới thiệu/Artist/tóc-tiên.jpg">
+                            <img src="/intro/Artist/tóc-tiên.jpg">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist"> Charlie </h4>
 
-                            <img src="/Giới thiệu/Artist/charlie-01.png" alt="">
+                            <img src="/intro/Artist/charlie-01.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -76,23 +75,23 @@
 
 
                         <div class="col">
-                            <h4 class="contain nameArtist">Taylor  </h4>
+                            <h4 class="contain nameArtist">Taylor </h4>
 
-                            <img src="/Giới thiệu/Artist/taylor switf.png">
+                            <img src="/intro/Artist/taylor switf.png">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist">Tóc Tiên </h4>
 
-                            <img src="/Giới thiệu/Artist/tóc-tiên.jpg">
+                            <img src="/intro/Artist/tóc-tiên.jpg">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist"> Charlie </h4>
 
-                            <img src="/Giới thiệu/Artist/charlie-01.png" alt="">
+                            <img src="/intro/Artist/charlie-01.png" alt="">
                         </div>
                         <div class="col">
                             <h4 class="contain nameArtist">Sơn Tùng </h4>
-                            <img src="/Giới thiệu/Artist/download.jpg">
+                            <img src="/intro/Artist/download.jpg">
 
                         </div>
                     </div>
@@ -102,8 +101,10 @@
 
 
                 <div class="contain display ">
-                    <button class=" want-dislay display-left" onclick="plusDivs(-1)" style="height: 40px;">&#10094;</button>
-                    <button class=" want-display display-right" onclick="plusDivs(1)" style="height: 40px;">&#10095;</button>
+                    <button class=" want-dislay display-left" onclick="plusDivs(-1)"
+                        style="height: 40px;">&#10094;</button>
+                    <button class=" want-display display-right" onclick="plusDivs(1)"
+                        style="height: 40px;">&#10095;</button>
                 </div>
 
 
@@ -152,24 +153,23 @@
 
 </div>
 
-     
+
 <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
 
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
-          }
-          x[slideIndex-1].style.display = "block";
         }
+        x[slideIndex - 1].style.display = "block";
+    }
 </script>
-

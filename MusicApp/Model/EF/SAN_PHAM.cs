@@ -24,9 +24,6 @@ namespace Model.EF
         [StringLength(50)]
         public string SangTac { get; set; }
 
-        [StringLength(10)]
-        public string MaNSX { get; set; }
-
         [StringLength(200)]
         public string SP_URL { get; set; }
 
@@ -50,7 +47,7 @@ namespace Model.EF
 
         [Key]
         [StringLength(10)]
-        public string masp { get; set; }
+        public string MaSP { get; set; }
 
         public TimeSpan? ThoiGian { get; set; }
 

@@ -11,7 +11,6 @@ namespace Model.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NGHE_SI()
         {
-            THEO_DOI = new HashSet<THEO_DOI>();
             TRINH_BAY = new HashSet<TRINH_BAY>();
         }
 
@@ -40,9 +39,6 @@ namespace Model.EF
         public string NgheDanh { get; set; }
 
         [StringLength(100)]
-        public string ThongTin { get; set; }
-
-        [StringLength(100)]
         public string URL_img { get; set; }
 
         [Key]
@@ -53,9 +49,6 @@ namespace Model.EF
         public string MaNhom { get; set; }
 
         public virtual NHOM NHOM { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<THEO_DOI> THEO_DOI { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TRINH_BAY> TRINH_BAY { get; set; }

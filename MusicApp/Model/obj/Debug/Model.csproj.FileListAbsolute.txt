@@ -11,4 +11,3 @@ D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.csproj.CoreCompile
 D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.csproj.CopyComplete
 D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.dll
 D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.pdb
-D:\Desktop\Web Music\web-music\MusicApp\Model\obj\Debug\Model.csproj.AssemblyReference.cache

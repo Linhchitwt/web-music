@@ -22,6 +22,13 @@ namespace MusicApp.Areas.Admin.Controllers
             {
                 var dao = new UserDao();
                 var result = dao.Login(model.UserName, Encryptor.MD5Hash(model.PassWord));
+                //if (result == 2)
+                //{
+                //    var userKH = dao.GetBymaKH(model.UserName);
+                //    var userSessionKH = new UserLogin();
+                //    Session.Add(CommonConstants.USER_SESSION, userSessionKH);
+                //    return RedirectToAction("Create", "CreateAcc");
+                //}
                 if (result == 1)
                 {
                     var user = dao.GetBymaKH(model.UserName);

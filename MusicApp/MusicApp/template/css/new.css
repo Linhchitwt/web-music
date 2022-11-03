@@ -1,0 +1,191 @@
+/*======================================
+            faceItems
+======================================*/
+#main {
+    position: relative;
+}
+.face,
+#main-content {
+    height: 670px;
+    overflow-y: auto;
+}
+#sel {
+    margin-top: 25px;
+}
+
+#sel li {
+    border: 0px;
+    display: inline-block;
+}
+
+#sel li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 30px;
+    list-style-type: none;
+
+}
+
+.selectbox {
+    width: 98%;
+    height: 48px;
+    background-color: #000;
+
+}
+
+.new_realese,
+#sel li:hover a {
+    color: #000;
+    background-color: #ccc;
+    border: 0px;
+}
+
+.albumblockfive {
+    width: 16.6%;
+    padding: 10px 10px 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 10%;
+}
+
+.date {
+    font-size: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+    left: 20px;
+}
+
+/* .fasfastart::before{
+   content: "\f005"
+} */
+.albumblockfive .img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    object-fit: scale-down;
+    height: 100%;
+}
+
+.artistitle {
+    text-decoration: none;
+    font-family: open sans, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 2px;
+    font-weight: 900;
+}
+
+.albumtitle {
+    font-family: open sans, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0px 0px 2px;
+}
+
+.ratingblock {
+    padding: 5px 10px 5px 0px;
+}
+
+.rating {
+    color: #000;
+    font-size: 14px;
+    font-family: open sans, sans-serif;
+    margin: 0px 0px 2px;
+}
+
+.ratingtext {
+    color: gray;
+    font-size: 11px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.green {
+    height: 4px;
+    background-color: #85ce73;
+    position: absolute;
+    left: 3px;
+    bottom: 13%;
+    width: 0px;
+}
+
+.yellow {
+    height: 4px;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+}
+
+.red {
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 90%;
+    width: 0px;
+}
+
+.face {
+    width: calc(100% / 5 - 5rem);
+    position: absolute;
+    right: 0;
+    top: 70px;
+    margin-right: 25px;
+}
+
+#faceitems {
+    height: 100%;
+    padding-right: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.faceitems {
+    padding-top: 3rem;
+}
+
+.facetitle {
+    padding: .8rem 1.2rem;
+    background-color: #fff;
+    margin: 10px 0;
+    margin-left: 0;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 600;
+}
+
+.facet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.6rem;
+}
+
+.faceitems {
+    font-size: 1.4rem;
+    color: #000;
+    padding: 1.2rem 0;
+    font-weight: 600;
+}
+
+.faceitems {
+    color: #000
+}
+
+.faceitems:hover {
+    color: #000;
+    transition: .2s;
+    cursor: pointer;
+}

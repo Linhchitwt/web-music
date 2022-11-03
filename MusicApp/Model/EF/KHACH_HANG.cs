@@ -13,9 +13,7 @@ namespace Model.EF
         {
             ALbums = new HashSet<ALbum>();
             NGHEs = new HashSet<NGHE>();
-            TAI_KHOAN = new HashSet<TAI_KHOAN>();
             THEO_DOI = new HashSet<THEO_DOI>();
-            TRUY_CAP_SK = new HashSet<TRUY_CAP_SK>();
             TRUY_CAP_TM = new HashSet<TRUY_CAP_TM>();
             YEU_THICH = new HashSet<YEU_THICH>();
         }
@@ -24,14 +22,20 @@ namespace Model.EF
         [StringLength(50)]
         public string TenKH { get; set; }
 
+        [StringLength(100)]
+        public string URL_img { get; set; }
+
+        [StringLength(50)]
+        public string UserName { get; set; }
+
+        [StringLength(50)]
+        public string Pass { get; set; }
+
         [StringLength(50)]
         public string DiaChi { get; set; }
 
         [Column(TypeName = "numeric")]
         public decimal SDT { get; set; }
-
-        [Column(TypeName = "numeric")]
-        public decimal? STK { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? NgaySinh { get; set; }
@@ -49,24 +53,22 @@ namespace Model.EF
         [StringLength(100)]
         public string GhiChu { get; set; }
 
+        [StringLength(5)]
+        public string MaPQ { get; set; }
+
         [Key]
         [StringLength(10)]
-        public string makh { get; set; }
+        public string MaKH { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ALbum> ALbums { get; set; }
+
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NGHE> NGHEs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TAI_KHOAN> TAI_KHOAN { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<THEO_DOI> THEO_DOI { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TRUY_CAP_SK> TRUY_CAP_SK { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TRUY_CAP_TM> TRUY_CAP_TM { get; set; }

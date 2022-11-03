@@ -9,14 +9,16 @@ namespace Model.EF
     [Table("ADMIN")]
     public partial class ADMIN
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ADMIN()
-        {
-            TK_AD = new HashSet<TK_AD>();
-        }
-
         [StringLength(50)]
         public string TenAD { get; set; }
+
+        [StringLength(50)]
+        public string UserName { get; set; }
+
+        [StringLength(50)]
+        public string Pass { get; set; }
+
+        public bool? TrangThai { get; set; }
 
         [StringLength(50)]
         public string DC { get; set; }
@@ -41,11 +43,12 @@ namespace Model.EF
         [StringLength(100)]
         public string GhiChu { get; set; }
 
+        [StringLength(5)]
+        public string MaPQ { get; set; }
+
         [Key]
         [StringLength(10)]
         public string MaAD { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TK_AD> TK_AD { get; set; }
     }
 }

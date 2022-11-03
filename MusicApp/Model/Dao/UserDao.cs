@@ -14,28 +14,28 @@ namespace Model.Dao
         {
             db = new Model1();
         }
-        //public int Insert(TAI_KHOAN entity)
+        //public long Insert(KHACH_HANG entity)
         //{
-        //    db.TAI_KHOAN.Add(entity);
+        //    db.KHACH_HANG.Add(entity);
         //    db.SaveChanges();
-        //    return entity.MaKH;
+        //    return entity.CCCD;
         //}
         //public string Insert(KHACH_HANG entity)
         //{
         //    db.KHACH_HANG.Add(entity);
-        //    db.TAI_KHOAN.Add(entity);
+        //    db.ADMIN.Add(entity);
         //    db.SaveChanges();
         //    return entity.makh;
         //}
-        //public bool Update(TAI_KHOAN entity)
+        //public bool Update(ADMIN entity)
         //{
         //    try
         //    {
-        //        var user = db.TAI_KHOAN.Find(entity.ID);
+        //        var user = db.ADMIN.Find(entity.ID);
         //        user.Name = entity.Name;
-        //        if (!string.IsNullOrEmpty(entity.Password))
+        //        if (!string.IsNullOrEmpty(entity.Pass))
         //        {
-        //            user.Password = entity.Password;
+        //            user.Pass = entity.Pass;
         //        }
         //        user.Phone = entity.Phone;
         //        user.Email = entity.Email;
@@ -51,9 +51,9 @@ namespace Model.Dao
         //        return false;
         //    }
         //}
-        public IEnumerable<TAI_KHOAN> ListAllPaging(string searchString, int page, int pageSize)
+        public IEnumerable<ADMIN> ListAllPaging(string searchString, int page, int pageSize)
         {
-            IQueryable<TAI_KHOAN> model = db.TAI_KHOAN;
+            IQueryable<ADMIN> model = db.ADMINs;
             if (!string.IsNullOrEmpty(searchString))
             {
                 model = model.Where(x => x.UserName.Contains(searchString));
@@ -61,23 +61,42 @@ namespace Model.Dao
             return model.ToPagedList(page, pageSize);
             //tao dau trang
         }
-        public TAI_KHOAN GetBymaKH(string username)
+        public ADMIN GetBymaKH(string username)
         {
-            return db.TAI_KHOAN.SingleOrDefault(x => x.UserName == username);
+            return db.ADMINs.SingleOrDefault(x => x.UserName == username);
         }
-        public TAI_KHOAN ViewDetail(string username)
+        public ADMIN ViewDetail(string username)
         {
-            return db.TAI_KHOAN.Find(username);
+            return db.ADMINs.Find(username);
         }
 
         public int Login(string userName, string passWord)
         {
-            var result = db.TK_AD.SingleOrDefault(x => x.UserName == userName);
-            if (result == null)
+            var result = db.ADMINs.SingleOrDefault(x => x.UserName == userName);
+            //var resultKH = db.KHACH_HANG.SingleOrDefault(x => x.UserName == userName);
+            if (result == null/* && resultKH == null*/)
             {
                 return 0;
             }
-            else
+            //if (resultKH != null && resultKH.UserName == userName)
+            //{
+            //    if (resultKH.TrangThai == false)
+            //    {
+            //        return -1;
+            //    }
+            //    else
+            //    {
+            //        if (resultKH.Pass == passWord)
+            //        {
+            //            return 2;
+            //        }
+            //        else
+            //        {
+            //            return -2;
+            //        }
+            //    }
+            //}
+            else if (result.UserName == userName)
             {
                 if (result.TrangThai == false)
                 {
@@ -85,7 +104,7 @@ namespace Model.Dao
                 }
                 else
                 {
-                    if (result.PassWord == passWord)
+                    if (result.Pass == passWord)
                     {
                         return 1;
                     }
@@ -94,6 +113,10 @@ namespace Model.Dao
                         return -2;
                     }
                 }
+            }
+            else
+            {
+                return -9;
             }
 
         }

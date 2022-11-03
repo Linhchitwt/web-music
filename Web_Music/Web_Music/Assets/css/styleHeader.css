@@ -23,7 +23,7 @@
     line-height: 46px;
     padding: 0 24px;
     font-size: 1.5rem;
-    
+
     /* width: 10%; */
     /* padding:0 5% 0 5%; */
     display: inline-block;
@@ -33,7 +33,7 @@
 
 #nav li a:hover {
     color: #fff;
-     background-color: rgb(54, 50, 91);
+    background-color: rgb(54, 50, 91);
     /* text-decoration: underline; */
     cursor: pointer;
 }
@@ -77,7 +77,7 @@
     height: 525px;
     margin: 10px 20%;
     position: relative;
-    background: url('../img/nền/nền-01.png');
+    background: url('../img/backG/backG-01.png');
 
     background-size: 100%;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@
     position: absolute;
     /* position: relative; */
 /* background-color: rgb(109, 116, 116); */
-/* background:url('../img/đăng nhập và đăng kí/nền-01.png') ; */
+/* background:url('../img/LoginSignup/backG-01.png') ; */
 
 .modal_inner {
     display: flex;
@@ -210,9 +210,11 @@
     background-color: rgb(152, 0, 90);
 
 }
-.btn-xn{
+
+.btn-xn {
     margin-left: 72px;
 }
+
 .btn:hover {
     text-decoration: underline;
     cursor: pointer;

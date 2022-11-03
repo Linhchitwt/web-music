@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/template/css/styleMain.css">
+    <link rel="stylesheet" href="/template/css/responsiveMain.css">
+    <link rel="stylesheet" href="/intro/imgMain/">
+    <!-- <link rel="stylesheet" href="/template/css/extraStyle.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/template/css/new.css">
+    <title>CNTT2 MUSIC</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="container">
+            <!--
+            =======================NAVBAR==========================
+        -->
+            <div id="navbar">
+                <div class="navbar-container">
+                    <header>
+                        <span class="check">
+                            <span class="ball"></span>
+                        </span>
+                        <i class="fas fa-stream js-hide-navbar"></i>
+                    </header>
+                    <div class="logo">
+                        <i class="navbar__logo fab fa-forumbee"></i>
+                        <span class="navbar__primary-text">CNTT2</span><span>Music</span>
+                    </div>
+                    <div class="navbar-content">
+                        <nav>
+                            <li class="navbar-content__icon">
+                                <a href="main.html"><i class="fas fa-home"></i>Home</a>
+                            </li>
+                            <li class="navbar-content__icon">
+                                <a href="Trend.html"><i class="fas fa-chart-line"></i>Trend</a>
+                            </li>
+                            <li class="navbar-content__icon">
+                                <a href="Feed.html"><i class="fas fa-compass"></i>Feed</a>
+                            </li>
+                        </nav>
+
+                        <nav>
+                            <p class=" navbar-content__title">Discover</p>
+                            <ul>
+                                <li class="navbar-content__icon">
+                                    <a href="Notable.html"><i class="far fa-newspaper"></i>New and Notable</a>
+                                </li>
+                                <li class="navbar-content__icon">
+                                    <a href="Calendar.html"><i class="fas fa-calendar-alt"></i>Release Calendar</a>
+                                </li>
+                                <li class="navbar-content__icon">
+                                    <a href="Event.html"><i class="fas fa-ticket-alt"></i>Events</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav>
+                            <p class=" navbar-content__title">Your Collection</p>
+                            <ul>
+                                <li class="navbar-content__icon">
+                                    <a href="favoriteSong.html"><i class="fas fa-heart"></i>Favorite Songs</a>
+                                </li>
+                                <li class="navbar-content__icon">
+                                    <a href="Artist.html"><i class="fas fa-users"></i>Artist</a>
+                                </li>
+                                <li class="navbar-content__icon">
+                                    <a href="Albums.html"><i class="fas fa-star"></i>Albums</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="navbar-user">
+                    <div class="navbar-user__container">
+                        <div class="user-avt">
+                            <img src="../../intro/imgMain/snow.png" alt="">
+                        </div>
+                        <div class="user-name">Linh Chi</div>
+                        <a href=""><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content">
+                <header>
+                    <nav class="main-content__header-nav">
+                        <i class="fas fa-arrow-left"></i>
+                        <i class="fas fa-arrow-right"></i>
+                    </nav>
+                    <div class="main-content__search-form">
+                        <i class="fas fa-search search-btn"></i>
+                        <input type="text" class="search-input" placeholder="Search for artist, songs.....">
+                    </div>
+                </header>
+                <div class="select">
+                    <div class="selectbox">
+                        <ul id="sel">
+                            <li><a href="/template/html/Calendar.html" class="this_month">THIS MONTH</a>
+                            </li>
+                            <li><a href="/template/html/Calendar_NewRealese.html" class="new_realese">NEW
+                                    RELEASES</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="albumblockfive " data-type>
+                        <div class="date">Sep 27</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/louzie.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Louzie song</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Business!</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <!-- <div class = "rating">81</div> -->
+                                    <!-- <div class = "ratingbargreen">
+                                    <div class = "green" style = "width:20%;"></div>
+                                </div> -->
+                                </div>
+                            </div>
+                            <!-- <div class = "ratingtext">critic score</div>
+                        <div class = "ratingtext">(26)</div> -->
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                                <!-- <div class = "rating">74</div> -->
+                                <!-- <div class ="ratingbargreen">
+                                <div class = "yellow" style = "width:20%;">
+                                </div>
+                            </div> -->
+                            </div>
+                            <!-- <div class = "ratingtext">user score</div>
+                        <div class = "ratingtext">(1,312)</div> -->
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/preservation.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Preservation</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">1974</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <!-- <div class = "rating">85</div> -->
+                                    <!-- <div class = "ratingbargreen">
+                                    <div class = "green" style = "width:20%;"></div>
+                                </div> -->
+                                </div>
+                            </div>
+                            <!-- <div class = "ratingtext">critic score</div>
+                        <div class = "ratingtext">(19)</div> -->
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                                <!-- <div class = "rating">81</div>
+                            <div class ="ratingbargreen">
+                                <div class = "yellow" style = "width:20%;">
+                                </div>
+                            </div> -->
+                            </div>
+                            <!-- <div class = "ratingtext">user score</div>
+                        <div class = "ratingtext">(1,100)</div> -->
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/darko.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Darko</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Oni</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">83</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(12)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                                <!-- <div class = "rating">48</div>
+                            <div class ="ratingbargreen">
+                                <div class = "red" style = "width:20%;">
+                                </div>
+                            </div> -->
+                            </div>
+                            <!-- <div class = "ratingtext">user score</div>
+                        <div class = "ratingtext">(664)</div> -->
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/xiumin.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Xiumin</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Brand New</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">74</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(6)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                                <!-- <div class = "rating">70</div>
+                            <div class ="ratingbargreen">
+                                <div class = "yellow" style = "width:20%;">
+                                </div>
+                            </div> -->
+                            </div>
+                            <!-- <div class = "ratingtext">user score</div>
+                        <div class = "ratingtext">(472)</div> -->
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/thewar.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">The War on Drugs</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">I Don't Live Here Anymore</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">67</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(2)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/lek.jpg">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Illektrolab</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Temporal Interference</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">78</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(1)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/clades.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Clades</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Absumptus</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">75</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(1)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/wuntwo.jpg">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Wun Two </div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">The Adventures Of Yallery Brown</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">77</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(1)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/marldn.jpg">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Marldn</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Boneless</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">80</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(1)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/tot.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Tot Onyx</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Senno I </div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">72</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(1)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/big.jpg">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">BigWalkDog</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">Trick City (Extended)</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                    <div class="rating">70</div>
+                                    <div class="ratingbargreen">
+                                        <div class="green" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ratingtext">user score</div>
+                            <div class="ratingtext">(1)</div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                                <div class="ratingbargreen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="albumblockfive" data-type>
+                        <div class="date">Sep 26</div>
+                        <div class="imagemusthear">
+                            <a href="">
+                                <div class="musthear">
+                                    <i class="fasfastart" aria-hidden="true">
+                                    </i>
+                                </div>
+                                <img class="lazyloaded" src="/intro/imgMain/imgCal/elusin.webp">
+                            </a>
+                        </div>
+                        <a href="">
+                            <div class="artistitle">Elusin</div>
+                        </a>
+                        <a href="">
+                            <div class="albumtitle">SYNFUELS</div>
+                        </a>
+                        <div class="ratingrowcontainer">
+                            <div class="ratingrow">
+                                <div class="ratingblock">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ratingrow">
+                            <div class="ratingblock">
+                                <div class="ratingbargreen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="face">
+                <div class="faceitems">
+                    <div class="facetitle">LINKS</div>
+                    <div class="facet">
+                        <a href="" rel="no follow ">BEST ALBUM OF 2022</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow ">WORST ALBUMS OF 2022</a>
+                    </div>
+                </div>
+                <div class="faceitems">
+                    <div class="facetitle">2022 RELEASES</div>
+                    <div class="facet">
+                        <a href="" rel="no follow">JANUARY</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">FEBRUARY</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">MARCH</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">APRIL</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">MAY</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">JUNE</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">JULY</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">AUGUST</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">SEPTEMBER</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">OCTORBER</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">NOVEMBER</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">DECEMBER</a>
+                    </div>
+                </div>
+                <div class="faceitems">
+                    <div class="facetitle">NEW RELEASES BY GENRE</div>
+                    <div class="facet">
+                        <a href="" rel="no follow">AMBIENT</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">ELECTRONIC</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">HIP HOP</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">HOUSE</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">METAL</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">POP</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">R&B</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">ROCK</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">TECHNO</a>
+                    </div>
+                    <div class="facet">
+                        <a href="" rel="no follow">TRAP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
