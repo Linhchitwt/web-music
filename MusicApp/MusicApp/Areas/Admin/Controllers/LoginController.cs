@@ -9,7 +9,7 @@ using MusicApp.Common;
 
 namespace MusicApp.Areas.Admin.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : BaseController
     {
         // GET: Admin/Login
         public ActionResult Index()

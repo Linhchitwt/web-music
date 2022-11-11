@@ -43,12 +43,8 @@ namespace Model.EF
         [StringLength(100)]
         public string GhiChu { get; set; }
 
-        [StringLength(5)]
-        public string MaPQ { get; set; }
-
         [Key]
         [StringLength(10)]
         public string MaAD { get; set; }
-
     }
 }

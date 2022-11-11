@@ -14,43 +14,14 @@ namespace Model.Dao
         {
             db = new Model1();
         }
-        //public long Insert(KHACH_HANG entity)
-        //{
-        //    db.KHACH_HANG.Add(entity);
-        //    db.SaveChanges();
-        //    return entity.CCCD;
-        //}
-        //public string Insert(KHACH_HANG entity)
-        //{
-        //    db.KHACH_HANG.Add(entity);
-        //    db.ADMIN.Add(entity);
-        //    db.SaveChanges();
-        //    return entity.makh;
-        //}
-        //public bool Update(ADMIN entity)
-        //{
-        //    try
-        //    {
-        //        var user = db.ADMIN.Find(entity.ID);
-        //        user.Name = entity.Name;
-        //        if (!string.IsNullOrEmpty(entity.Pass))
-        //        {
-        //            user.Pass = entity.Pass;
-        //        }
-        //        user.Phone = entity.Phone;
-        //        user.Email = entity.Email;
-        //        user.Address = entity.Address;
-        //        user.ModifieBy = entity.ModifieBy;
-        //        user.ModifiedDate = DateTime.Now;
-        //        db.SaveChanges();
-        //        return true;
+        public string Insert(KHACH_HANG entity)
+        {
+            db.KHACH_HANG.Add(entity);
+            db.SaveChanges();
+            return entity.UserName;
+        }
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return false;
-        //    }
-        //}
+       
         public IEnumerable<ADMIN> ListAllPaging(string searchString, int page, int pageSize)
         {
             IQueryable<ADMIN> model = db.ADMINs;
@@ -73,29 +44,29 @@ namespace Model.Dao
         public int Login(string userName, string passWord)
         {
             var result = db.ADMINs.SingleOrDefault(x => x.UserName == userName);
-            //var resultKH = db.KHACH_HANG.SingleOrDefault(x => x.UserName == userName);
-            if (result == null/* && resultKH == null*/)
+            var resultKH = db.KHACH_HANG.SingleOrDefault(x => x.UserName == userName);
+            if (result == null && resultKH == null)
             {
                 return 0;
             }
-            //if (resultKH != null && resultKH.UserName == userName)
-            //{
-            //    if (resultKH.TrangThai == false)
-            //    {
-            //        return -1;
-            //    }
-            //    else
-            //    {
-            //        if (resultKH.Pass == passWord)
-            //        {
-            //            return 2;
-            //        }
-            //        else
-            //        {
-            //            return -2;
-            //        }
-            //    }
-            //}
+            else if (resultKH != null && resultKH.UserName == userName)
+            {
+                if (resultKH.TrangThai == false)
+                {
+                    return -1;
+                }
+                else
+                {
+                    if (resultKH.Pass == passWord)
+                    {
+                        return 2;
+                    }
+                    else
+                    {
+                        return -2;
+                    }
+                }
+            }
             else if (result.UserName == userName)
             {
                 if (result.TrangThai == false)

@@ -45,11 +45,6 @@ namespace Model.EF
                 .HasPrecision(13, 0);
 
             modelBuilder.Entity<ADMIN>()
-                .Property(e => e.MaPQ)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ADMIN>()
                 .Property(e => e.MaAD)
                 .IsFixedLength()
                 .IsUnicode(false);
@@ -79,11 +74,6 @@ namespace Model.EF
             modelBuilder.Entity<KHACH_HANG>()
                 .Property(e => e.CCCD)
                 .HasPrecision(12, 0);
-
-            modelBuilder.Entity<KHACH_HANG>()
-                .Property(e => e.MaPQ)
-                .IsFixedLength()
-                .IsUnicode(false);
 
             modelBuilder.Entity<KHACH_HANG>()
                 .Property(e => e.MaKH)
@@ -148,8 +138,6 @@ namespace Model.EF
                 .Property(e => e.MaNHOM)
                 .IsFixedLength()
                 .IsUnicode(false);
-
-          
 
             modelBuilder.Entity<SAN_PHAM>()
                 .Property(e => e.YeuThich)
@@ -234,5 +222,7 @@ namespace Model.EF
                 .IsFixedLength()
                 .IsUnicode(false);
         }
+        //public System.Data.Entity.DbSet<MusicApp.Models.RegisterInfo> RegisterInfoes { get; set; }
+
     }
 }

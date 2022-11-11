@@ -53,8 +53,9 @@ namespace Model.EF
         [StringLength(100)]
         public string GhiChu { get; set; }
 
-        [StringLength(5)]
-        public string MaPQ { get; set; }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { get; set; }
 
         [Key]
         [StringLength(10)]
@@ -62,7 +63,6 @@ namespace Model.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ALbum> ALbums { get; set; }
-
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NGHE> NGHEs { get; set; }
